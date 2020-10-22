@@ -8,58 +8,66 @@ html, body {
 
 header {
     position: absolute;
-    margin:auto;
+    margin: auto;
     height: 100px;
     left: 0;
     right: 0;
     z-index: 1000;
 }
-header img{
+
+header img {
     vertical-align: middle;
 }
-button{
+
+button {
     border-radius: 5px;
     text-transform: uppercase;
 }
+
 .container {
     margin: auto;
     max-width: 1440px;
 }
 
-.nav-link{
+.nav-link {
     margin-top: 20px;
 }
 
-.nav-link button{
+.nav-link button {
     border: 2px solid #ffffff;
     height: 40px;
-    background: rgba(0,0,0,0);
-    font-size:16px;
-    color:#ffffff
-}
-.nav-link-right li{
+    background: rgba(0, 0, 0, 0);
     font-size: 16px;
-    color:#ffffff;
+    color: #ffffff
+}
+
+.nav-link-right li {
+    font-size: 16px;
+    color: #ffffff;
     margin-right: 35px;
 }
-.nav-link-left{
+
+.nav-link-left {
     float: left;
 }
 
-.nav-link-right{
+.nav-link-right {
     float: right;
 }
 
 .nav-link li {
     display: inline-block;
 }
-.button-help{
+
+.button-help {
     margin: 0px 10px 0px 25px;
     width: 160px;
 }
-.button-call-us{
+
+.button-call-us {
     width: 100px;
 }
+
 main .top-banner {
     text-align: center;
     display: grid;
@@ -112,7 +120,7 @@ p b {
 
 
 .footer-banner {
-    height:80px;
+    height: 80px;
     background-color: #eff7f7;
     display: flex;
     align-items: center;
@@ -122,54 +130,234 @@ p b {
     width: 100%;
     font-size: 18px;
 }
-.footer-banner p{
-   font-weight: 500;
+
+.footer-banner p {
+    font-weight: 500;
 }
-.footer-banner a{
+
+.footer-banner a {
     font-weight: 700;
-    color:#8ae2e2;
+    color: #8ae2e2;
 }
 
 
 .top-banner {
-    height: 950px;
+    height: 850px;
     background-color: rgba(23, 49, 83, 0.4);
     background-blend-mode: darken;
     background-image: url("./image/top-banner.jpg") !important;
     background-size: cover;
     position: relative;
 }
+
 .search-top {
     color: #0b2a37;
 }
-.search-top-title{
+
+.search-top-title {
     font-size: 36px;
     font-weight: 900;
     text-align: center;
     margin: 50px 0px 70px 0px;
 }
-.search-top-content p{
+
+.search-top-content p {
+
     font-size: 16px;
 }
-.search-top-content{
-    display: flex;
+
+.search-top-content {
+
+    display: inline-grid;
     text-align: center;
     justify-content: center;
+    grid-auto-flow: column;
+    grid-gap: 85px;
+    margin: 0px 45px 130px 45px;
+    grid-template-columns: repeat(4, 270px);
 }
-.search-top-article{
-    width: 20%;
-    margin:  0px 30px ;
-}
-.search-top-article img{
-    margin: 10px 0px 45px 0px;
-}
-.search-top-article h6{
 
+.search-top-content article {
+    display: grid !important;
+    grid-template-rows: 150px 50px 70px;
+    justify-items: center;
+}
+
+.search-top-article h6 {
     font-weight: 700;
     font-size: 22px;
     margin: 0px;
 }
 
+.search-top-article p {
+    grid-row: 3;
+}
+
+.how-it-was {
+    background-color: #66cfcf;
+    color: #ffffff;
+
+}
+
+.how-it-was article {
+    display: flex;
+    height: 870px;
+    padding: 160px 45px 0px 60px;
+}
+
+.steps-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    width: 45%;
+    margin-right: 25px;
+}
+
+.steps-title h1 {
+    margin: 45px 0px 40px 0px;
+}
+
+.steps-title button {
+    border: 2px solid white;
+    background: none;
+    height: 70px;
+    width: 270px;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px 5px;
+    font-weight: 700;
+}
+
+.image-how-it-was {
+    height: 570px;
+    overflow: hidden;
+    margin: 0px;
+    position: relative;
+}
+
+.image-how-it-was img {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: -120px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+.step-two, .step-four {
+    right: 0px;
+    place-self: flex-end;
+    text-align: end;
+}
+
+.steps section {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.steps b {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.steps p {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.step-two {
+    margin-bottom: 25px !important;
+}
+
+.step-one section, .step-three section {
+    width: 50%;
+    display: block;
+    margin: 10px 0px 0px 10px;
+    float: left;
+}
+
+.steps img {
+    position: relative;
+
+}
+
+.icon-left {
+    float: left;
+    height: fit-content;
+
+}
+
+.icon-right {
+
+    float: right;
+    height: fit-content;
+}
+
+.step-one, .step-three {
+    margin-left: 115px;
+}
+
+.step-two section, .step-four section {
+    margin: 10px 15px 0px 0px;
+    width: 45%;
+    float: right;
+}
+
+.right-line {
+    margin-top: 20px;
+    position: absolute !important;
+    right: -125px;
+}
+
+.left-line {
+    position: absolute !important;
+    left: 0;
+    margin-top: 20px;
+}
+
+.recall-title {
+    font-weight: 900;
+    font-size: 36px;
+    color: #0b2a37;
+    text-align: center;
+
+}
+
+.doctor-hand {
+    overflow: hidden;
+    position: relative;
+    height: 650px;
+}
+
+.doctor-hand img {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: -245px;
+}
+
+.row {
+    display: flex;
+    margin: 0px 35px;
+}
+
+.col-1, .col-2, .col-3 {
+    position: relative;
+    width: 410px;
+    margin-left: 50px;
+
+}
+
+.chat-text {
+    position: absolute;
+    top: 0;
+    margin: 40px 20px;
+}
 
 @media (min-width: 1200px) {
 
