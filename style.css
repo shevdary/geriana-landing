@@ -4,6 +4,8 @@ html, body {
     margin: auto;
     padding: 0;
     font-family: 'Maven Pro', sans-serif;
+    color: #0b2a37;
+    font-size: 16px;
 }
 
 header {
@@ -24,6 +26,15 @@ button {
     text-transform: uppercase;
 }
 
+.question-icon {
+    position: absolute;
+    left: 10px;
+}
+
+.question-button {
+    margin: inherit;
+}
+
 .container {
     margin: auto;
     max-width: 1440px;
@@ -37,14 +48,24 @@ button {
     border: 2px solid #ffffff;
     height: 40px;
     background: rgba(0, 0, 0, 0);
-    font-size: 16px;
-    color: #ffffff
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.button-help {
+    position: relative;
+
 }
 
 .nav-link-right li {
     font-size: 16px;
     color: #ffffff;
     margin-right: 35px;
+}
+
+.hamburger-menu {
+    margin-right: 5px;
 }
 
 .nav-link-left {
@@ -145,7 +166,7 @@ p b {
     height: 850px;
     background-color: rgba(23, 49, 83, 0.4);
     background-blend-mode: darken;
-    background-image: url("./image/top-banner.jpg") !important;
+    background-image: url("images/recalls/top-banner.jpg") !important;
     background-size: cover;
     position: relative;
 }
@@ -201,8 +222,7 @@ p b {
 
 .how-it-was article {
     display: flex;
-    height: 870px;
-    padding: 160px 45px 0px 60px;
+    padding: 160px 45px 60px 60px;
 }
 
 .steps-title {
@@ -325,38 +345,244 @@ p b {
     font-size: 36px;
     color: #0b2a37;
     text-align: center;
+    margin: 100px 0px 120px 0px;
 
 }
 
 .doctor-hand {
     overflow: hidden;
     position: relative;
-    height: 650px;
+    height: 540px;
 }
 
 .doctor-hand img {
     overflow: hidden;
     width: 100%;
     position: absolute;
-    top: -245px;
+    top: -265px;
 }
 
-.row {
-    display: flex;
+.recall .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0px 35px;
+    grid-auto-flow: column;
 }
 
-.col-1, .col-2, .col-3 {
+.recall .col-1, .col-2, .col-3 {
     position: relative;
     width: 410px;
-    margin-left: 50px;
-
+    color: #0b2a37;
 }
 
 .chat-text {
     position: absolute;
     top: 0;
     margin: 40px 20px;
+}
+
+.chat-person {
+    float: right;
+    text-align: end;
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.chat-person img {
+    height: fit-content;
+}
+
+.chat-person p {
+    margin: 0;
+}
+
+.chat-person section {
+    margin: auto 10px;
+}
+
+.image-preferences {
+    overflow: hidden;
+    position: relative;
+    height: 540px;
+}
+
+.preferences-background {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: -125px;
+}
+
+.preferences {
+    background: #005173;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.preferences-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 170px;
+    margin-bottom: 125px;
+}
+
+.preferences-title {
+    font-weight: 900;
+    font-size: 80px;
+    margin: 0px 0px 55px 0px;
+}
+
+.preferences-list {
+    list-style-type: none;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.peferences-icon {
+    position: absolute;
+    right: -115px;
+    bottom: -115px;
+    overflow: hidden;
+}
+
+.preferences-list li {
+    margin-bottom: 10px;
+}
+
+.preferences-right {
+    order: 2;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preferences-right button {
+    font-size: 18px;
+    font-weight: 700;
+    height: 70px;
+    background: none;
+    border: 2px solid #ffffff;
+    width: 275px;
+    color: #ffffff;
+}
+
+.preferences-left {
+    order: 1;
+}
+
+.preferences-left hr {
+    width: 50px;
+    border: none;
+    height: 2px;
+    float: left;
+    position: absolute;
+    background-color: #8ae2e2;
+
+}
+
+.phone {
+    display: block;
+    text-align: center;
+}
+
+.phone button {
+}
+
+.footer-bottom {
+    background-color: #0b2a37;
+    color: #ffffff;
+}
+
+.phone-title {
+    margin: 55px 0px 0px;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.phone-subtitle {
+    margin: 0px 0px 35px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.phone button {
+    width: 210px;
+    height: 40px;
+    background-color: #ff6262;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    display: grid;
+    padding-bottom: 85px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.link-info {
+    display: inline-grid;
+    margin: 85px 0px 0px 40px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.link-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-info b {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.link-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-info li {
+    opacity: 0.8;
+}
+
+.footer-follow b {
+    font-size: 22px;
+}
+
+.footer-follow {
+    margin: 85px 0px 0px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-follow img {
+    width: fit-content;
+
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-follow p {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.social-app {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 @media (min-width: 1200px) {
