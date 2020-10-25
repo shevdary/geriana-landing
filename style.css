@@ -15,8 +15,6 @@ header {
     height: 100px;
     z-index: 1000;
     margin: auto;
-
-
 }
 
 header img {
@@ -27,26 +25,68 @@ button {
     border-radius: 5px;
     text-transform: uppercase;
 }
+
+.w-100 {
+    width: 100%;
+}
+
 .container {
     margin: auto;
     max-width: 1440px;
 }
-.background-position{
-    position: absolute;
+
+.m-0 {
+    margin: 0;
+}
+
+.border-white {
+    border: 2px solid #ffffff;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.background-position {
     width: 100%;
     overflow: hidden;
 }
-.relative-position{
+
+.relative-position {
     position: relative;
 }
-.fit-content{
+
+.position-absolute {
+    position: absolute;
+}
+
+.fit-content {
     height: fit-content;
 }
-.w-100{
-    width: 100%;
+
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
 .question-icon {
-    position: absolute;
     left: 10px;
 }
 
@@ -60,14 +100,10 @@ button {
 }
 
 .nav-link button {
-    border: 2px solid #ffffff;
     height: 40px;
     background: rgba(0, 0, 0, 0);
     color: #ffffff;
-    font-weight: 700;
-
 }
-
 
 .nav-link-right li {
     color: #ffffff;
@@ -76,14 +112,6 @@ button {
 
 .hamburger-menu {
     margin-right: 5px;
-}
-
-.nav-link-left {
-    float: left;
-}
-
-.nav-link-right {
-    float: right;
 }
 
 .nav-link li {
@@ -98,20 +126,18 @@ button {
 .button-call-us {
     width: 100px;
 }
+
 .text-on-banner {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .text-on-banner h1 {
-    margin: 0;
     font-size: 80px;
     color: #8ae2e2;
     word-spacing: 25px;
@@ -133,7 +159,6 @@ button {
     font-size: 26px;
     color: white;
     width: 785px;
-    text-align: center;
     margin: 45px 0px 45px 0px;
 }
 
@@ -144,22 +169,18 @@ p b {
 .text-on-banner button {
     font-size: 18px;
     color: #ffffff;
-    font-weight: bold;
     background-color: #ff5151;
     border: none;
     height: 70px;
     width: 274px;
 }
 
-
 .footer-banner {
-    position: absolute;
     bottom: 0;
     display: flex;
     height: 80px;
     background-color: #eff7f7;
     align-items: center;
-    justify-content: center;
     font-size: 18px;
 }
 
@@ -168,7 +189,6 @@ p b {
 }
 
 .footer-banner a {
-    font-weight: 700;
     color: #8ae2e2;
 }
 
@@ -183,17 +203,13 @@ p b {
     height: 830px;
 }
 
-
 .search-top-title {
     font-size: 36px;
-    text-align: center;
     margin: 50px 0px 70px 0px;
 }
 
-
 .search-top-content {
     display: inline-grid;
-    text-align: center;
     grid-auto-flow: column;
     grid-gap: 85px;
     margin: 0px 45px 130px 45px;
@@ -206,7 +222,6 @@ p b {
 }
 
 .search-top-article h6 {
-    font-weight: 700;
     font-size: 22px;
     margin: 0px;
 }
@@ -218,7 +233,6 @@ p b {
 .how-it-was {
     background-color: #66cfcf;
     color: #ffffff;
-
 }
 
 .how-it-was article {
@@ -239,14 +253,12 @@ p b {
 }
 
 .steps-title button {
-    border: 2px solid white;
     background: none;
     height: 70px;
     width: 270px;
     font-size: 18px;
     color: #ffffff;
     margin: 0px 5px;
-    font-weight: 700;
 }
 
 .mobile-count-steps {
@@ -282,7 +294,6 @@ p b {
 
 .steps b {
     font-size: 22px;
-    font-weight: 700;
 }
 
 .steps p {
@@ -296,16 +307,7 @@ p b {
 .step-one section, .step-three section {
     display: block;
     width: 50%;
-    float: left;
     margin: 10px 0px 0px 10px;
-}
-.icon-left {
-    float: left;
-}
-
-.icon-right {
-    float: right;
-
 }
 
 .step-one, .step-three {
@@ -314,7 +316,6 @@ p b {
 
 .step-two section, .step-four section {
     width: 45%;
-    float: right;
     margin: 10px 15px 0px 0px;
 }
 
@@ -344,16 +345,12 @@ p b {
     font-weight: 900;
     font-size: 36px;
     color: #0b2a37;
-    text-align: center;
     margin: 100px 0px 120px 0px;
-
 }
+
 .recall .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     margin: 0px 35px 90px 35px;
     grid-gap: 65px;
-
 }
 
 .recall .col-1, .col-2, .col-3 {
@@ -362,21 +359,14 @@ p b {
 }
 
 .chat-text {
-    position: absolute;
     top: 0;
     margin: 40px 20px;
 }
 
 .chat-person {
     display: flex;
-    float: right;
     text-align: end;
     margin-bottom: 20px;
-}
-
-
-.chat-person p {
-    margin: 0;
 }
 
 .chat-person section {
@@ -387,7 +377,6 @@ p b {
     position: relative;
     height: 540px;
     overflow: hidden;
-
 }
 
 .preferences-background {
@@ -399,7 +388,6 @@ p b {
     background: #005173;
     color: #ffffff;
     overflow: hidden;
-
 }
 
 .preferences-content {
@@ -424,7 +412,6 @@ p b {
 }
 
 .peferences-icon {
-    position: absolute;
     bottom: -115px;
     right: -115px;
     overflow: hidden;
@@ -439,16 +426,13 @@ p b {
     order: 2;
     margin-left: 80px;
     flex-direction: column;
-    justify-content: center;
 }
 
 .preferences-right button {
     width: 275px;
     height: 70px;
     font-size: 18px;
-    font-weight: 700;
     background: none;
-    border: 2px solid #ffffff;
     color: #ffffff;
 }
 
@@ -457,18 +441,14 @@ p b {
 }
 
 .preferences-left hr {
-    position: absolute;
     width: 50px;
     height: 2px;
-    float: left;
     border: none;
     background-color: #8ae2e2;
-
 }
 
 .phone {
     display: block;
-    text-align: center;
 }
 
 .footer-bottom {
@@ -505,15 +485,12 @@ p b {
 }
 
 .link-info {
-    display: inline-grid;
     margin: 85px 0px 0px 40px;
     grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .link-info ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
@@ -544,7 +521,6 @@ p b {
 
 .footer-follow img {
     width: fit-content;
-
 }
 
 .footer-logo {
@@ -560,14 +536,6 @@ p b {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 12px;
-}
-
-.steps-title h1 {
-    text-align: left;
-}
-
-.preferences-content {
-    margin: 50px 0px;
 }
 
 @media (min-width: 1200px) {
@@ -594,7 +562,6 @@ p b {
 
     .steps-title {
         display: block;
-        text-align: center;
         text-align: center;
         margin-bottom: 50px;
     }
@@ -624,6 +591,7 @@ p b {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
     .text-on-banner {
         width: 760px;
@@ -699,7 +667,6 @@ p b {
         display: block;
         text-align: center;
         margin-bottom: 55px;
-        text-align: center;
     }
 
 
@@ -725,6 +692,7 @@ p b {
     }
 
 }
+
 @media (max-width: 767px) {
     .line-left, .left-line, .right-line, .doctor-hand, .image-preferences {
         display: none
@@ -774,6 +742,7 @@ p b {
     }
 
     .text-on-banner p {
+        width: 100%;
         font-weight: 400;
         font-size: 16px;
         color: white;
@@ -790,8 +759,8 @@ p b {
     }
 
     .chat-text {
-        top: 0;
-        margin: 10px 13px;
+        margin: 10px;
+        font-size: 12px;
     }
 
     .search-top-content {
@@ -854,7 +823,6 @@ p b {
         display: block;
         width: 100%;
         text-align: center;
-        text-align: center;
         margin-bottom: 50px;
     }
 
@@ -878,19 +846,19 @@ p b {
     }
 
     .preferences-list {
-        display: flex;
         width: 365px;
-        list-style-type: none;
         margin-left: 0;
-        padding-left: 10px;
-
-        flex-direction: column;
+        padding-left: 0px;
+    }
+    .preferences-list li {
+        margin: 0px 10px 10px 10px;
     }
 
     .line-left, .left-line, .right-line {
         display: none
     }
 }
+
 @media (max-width: 480px) {
     .nav-link-left, .nav-link-right {
         display: inline-block;
@@ -917,6 +885,9 @@ p b {
     .top-banner {
         text-align: center;
     }
+    .footer-banner p, a{
+        font-size: 16px;
+    }
 
     .search-top-content {
         display: flex;
@@ -926,10 +897,6 @@ p b {
         grid-auto-flow: row;
         grid-gap: 85px;
         margin: 0px 45px 130px 45px;
-    }
-
-    .chat-icon {
-        width: 100%;
     }
 
     .line-left, .left-line, .right-line, .doctor-hand, .image-preferences {
@@ -981,17 +948,14 @@ p b {
         display: none;
     }
 
-
     .preferences-list {
-        display: flex;
-        list-style-type: none;
-        flex-direction: column;
         margin: 45px 0px;
     }
-
-    .preferences-content {
-        display: flex;
-        flex-direction: column-reverse;
+    .preferences-list li {
+        margin: 0px 10px 10px 10px;
+    }
+    .preferences-content{
+        margin-bottom: 70px;
     }
 
     .peferences-icon {
