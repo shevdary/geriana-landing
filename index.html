@@ -11,7 +11,7 @@
 <header class="nav-link container">
     <section class="nav-link-left">
         <img src="images/logotype/logo-3.png" alt="">
-        <button class="button-help">
+        <button class="button-help relative-position">
             <div class="question-button"><img src="images/navbar/question.png" alt="" class="question-icon">Help Center
             </div>
         </button>
@@ -32,20 +32,21 @@
         </ul>
     </nav>
 </header>
-<section class="top-banner">
-    <section class="text-on-banner">
+<section class="top-banner relative-position">
+    <section class="bg-banner">
+        <img src="images/top-banner/top-banner.jpg" class="background-baner  w-100 background-position relative-position">
+    </section>
+    <section class="text-on-banner w-100">
         <h1>Znajdź opiekuna</h1>
         <h2>dla swoich najbliższych</h2>
-        <p>Skontaktuj się bezpośrednio z jedną z <b>60,000 zarejestrowanych</b>
-            <wbr/>
+        <p class="w-100">Skontaktuj się bezpośrednio z jedną z <b>60,000 zarejestrowanych</b>
             opiekunek
         </p>
         <button>ZNAJDŹ OPIEKUNKĘ</button>
     </section>
-    <footer class="footer-banner">
+    <footer class="footer-banner w-100">
         <p>Want to care with Geriana?</p><a href="#"> Become a Caregiver</a>
     </footer>
-
 </section>
 <main>
     <section class="container search-top">
@@ -81,27 +82,29 @@
             </article>
         </section>
     </section>
-    <div class="image-how-it-was">
-        <img src="images/background/help.jpg" alt="How it was">
+    <div class="image-how-it-was relative-position">
+        <img src="images/background/help.jpg" alt="How it was" class="background-position">
     </div>
     <section class="how-it-was ">
         <article class="container col-1">
-            <section class="steps-title">
+            <section class="steps-title w-100">
                 <h1>Jak Działamy dla Poszukujących Opieki</h1>
                 <button>ZNAJDŹ OPIEKUNKĘ</button>
             </section>
             <section class="steps">
-                <section class="step-one">
-                    <img src="images/steps/search.png" alt="" class="icon-left">
+                <section class="step-one relative-position">
+                    <img src="images/steps/search.png" alt="" class="icon-left fit-content relative-position">
+                    <h1 class="mobile-count-steps">1</h1>
                     <section>
                         <b>Search a Caregiver</b>
                         <p>Ustalasz kryteria wyboru i wyszukujesz opiekuna z wymaganymi kwalifikacjami.
                         </p>
                     </section>
-                    <img src="images/steps/arrow-right.png" alt="" class="right-line">
-                </section>
-                <section class="step-two">
-                    <img src="images/steps/cursor.png" alt="" class="icon-right">
+                    <img src="images/steps/arrow-right.png" alt="" class="right-line relative-position">
+                </section >
+                <section class="step-two relative-position">
+                    <img src="images/steps/cursor.png" alt="" class="icon-right fit-content relative-position">
+                    <h1 class="mobile-count-steps">2</h1>
                     <section>
                         <b>Select a Caregiver</b>
                         <p>Decydujesz na podstawie weryfikacji profilu i opinii inyych ocób o danej opiekunce.
@@ -109,10 +112,11 @@
                             współpracę z wybraną osobą
                         </p>
                     </section>
-                    <img src="images/steps/arrow-left.png" alt="" class="left-line">
+                    <img src="images/steps/arrow-left.png" alt="" class="left-line relative-position">
                 </section>
-                <section class="step-three">
-                    <img src="images/steps/hourglass.png" alt="" class="icon-left">
+                <section class="step-three relative-position">
+                    <img src="images/steps/hourglass.png" alt="" class="icon-left relative-position">
+                    <h1 class="mobile-count-steps">3</h1>
                     <section>
                         <b>Test Period</b>
                         <p>Opiekun rozpoczyna okres próbny
@@ -120,10 +124,11 @@
                             zostaje na dłużej.
                         </p>
                     </section>
-                    <img src="images/steps/arrow-right.png" alt="" class="right-line">
+                    <img src="images/steps/arrow-right.png" alt="" class="right-line relative-position">
                 </section>
-                <section class="step-four">
-                    <img src="images/steps/dollar.png" alt="" class="icon-right">
+                <section class="step-four relative-position">
+                    <img src="images/steps/dollar.png" alt="" class="icon-right relative-position">
+                    <h1 class="mobile-count-steps">4</h1>
                     <section>
                         <b>Pay after Start</b>
                         <p>Opiekun dostaje wynagrodzenie
@@ -136,14 +141,55 @@
             </section>
         </article>
     </section>
-    <section class="recall">
+    <section class="recall relative-position">
         <div class="doctor-hand">
-            <img src="images/background/doctor.jpg" alt="How it was">
+            <img src="images/background/doctor.jpg" alt="How it was" class="background-position">
         </div>
         <article class=" container">
             <h2 class="recall-title">What do our Clients Say?</h2>
             <div class="row">
-                <div class="col-1">
+                <div class="col-1 relative-position">
+                    <img src="images/recalls/chat.png" alt="" class="chat-icon w-100">
+                    <section class="chat-text">
+                        Moja mama zachorowała jakiś czas temu i nie jest
+                        już zupełnie samodzielna. Sama przestałam dawac
+                        radę zajmować się własnym domem ..
+                    </section>
+                    <section class="chat-person">
+                        <section>
+                            <b>Aneta, 39l </b>
+                            <p>Service provider</p></section>
+                        <img src="images/recalls/recall-photo.png" alt="" class="fit-content">
+                    </section>
+                </div>
+                <div class="col-2 relative-position ">
+                    <img src="images/recalls/chat.png" alt="" class="chat-icon">
+                    <section class="chat-text">Jestem zadowolona z korzystania z portalu. Nic
+                        mnie to nie kosztuje, a mam dostęp do ogłoszeń o
+                        pracy z Polski i zagraicy. Byłam już w pracy ..
+                    </section>
+                    <section class="chat-person">
+                        <section>
+                            <b>Katarzyna, 51 lat</b>
+                            <p>Client</p>
+                        </section>
+                        <img src="images/recalls/recall-2.png" alt="">
+                    </section>
+                </div>
+                <div class="col-3 relative-position">
+                    <img src="images/recalls/chat.png" alt="" class="chat-icon">
+                    <section class="chat-text">Moja mama zachorowała jakiś czas temu i nie jest
+                        już zupełnie samodzielna. Sama przestałam dawac
+                        radę zajmować się własnym domem ..
+                    </section>
+                    <section class="chat-person">
+                        <section>
+                            <b>Aneta, 39l </b>
+                            <p>Service provider</p></section>
+                        <img src="images/recall-col-1.png" alt="">
+                    </section>
+                </div>
+                <div class="col-1 relative-position">
                     <img src="images/recalls/chat.png" alt="" class="chat-icon">
                     <section class="chat-text">
                         Moja mama zachorowała jakiś czas temu i nie jest
@@ -157,7 +203,7 @@
                         <img src="images/recalls/recall-photo.png" alt="">
                     </section>
                 </div>
-                <div class="col-2">
+                <div class="col-2 relative-position">
                     <img src="images/recalls/chat.png" alt="" class="chat-icon">
                     <section class="chat-text">Jestem zadowolona z korzystania z portalu. Nic
                         mnie to nie kosztuje, a mam dostęp do ogłoszeń o
@@ -171,50 +217,7 @@
                         <img src="images/recalls/recall-2.png" alt="">
                     </section>
                 </div>
-                <div class="col-3">
-                    <img src="images/recalls/chat.png" alt="" class="chat-icon">
-                    <section class="chat-text">Moja mama zachorowała jakiś czas temu i nie jest
-                        już zupełnie samodzielna. Sama przestałam dawac
-                        radę zajmować się własnym domem ..
-                    </section>
-                    <section class="chat-person">
-                        <section>
-                            <b>Aneta, 39l </b>
-                            <p>Service provider</p></section>
-                        <img src="images/recall-col-1.png" alt="">
-                    </section>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <img src="images/recalls/chat.png" alt="" class="chat-icon">
-                    <section class="chat-text">Moja mama zachorowała jakiś czas temu i nie jest
-                        już zupełnie samodzielna. Sama przestałam dawac
-                        radę zajmować się własnym domem ..
-                    </section>
-                    <section class="chat-person">
-                        <section>
-
-                            <b>Aneta, 39l </b>
-                            <p>Service provider</p></section>
-                        <img src="images/recall-col-1.png" alt="">
-                    </section>
-                </div>
-                <div class="col-2">
-                    <img src="images/recalls/chat.png" alt="" class="chat-icon">
-                    <section class="chat-text">Jestem zadowolona z korzystania z portalu. Nic
-                        mnie to nie kosztuje, a mam dostęp do ogłoszeń o
-                        pracy z Polski i zagraicy. Byłam już w pracy ..
-                    </section>
-                    <section class="chat-person">
-                        <section>
-                            <b>Katarzyna, 51 lat</b>
-                            <p>Client</p>
-                        </section>
-                        <img src="images/recalls/recall-2.png" alt="">
-                    </section>
-                </div>
-                <div class="col-3">
+                <div class="col-3 relative-position">
                     <img src="images/recalls/chat.png" alt="" class="chat-icon">
                     <section class="chat-text">Moja mama zachorowała jakiś czas temu i nie jest
                         już zupełnie samodzielna. Sama przestałam dawac
@@ -228,11 +231,12 @@
                     </section>
                 </div>
             </div>
+            </div>
         </article>
     </section>
     <section class="preferences">
         <div class="image-preferences">
-            <img src="images/background/preferences-back.jpg" alt="" class="preferences-background">
+            <img src="images/background/preferences-back.jpg" alt="" class="preferences-background background-position">
         </div>
         <img src="images/preferences/logo-shape.png" alt="" class="peferences-icon">
         <section class="preferences-content container">

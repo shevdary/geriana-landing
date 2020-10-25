@@ -10,11 +10,13 @@ html, body {
 
 header {
     position: absolute;
-    margin: auto;
-    height: 100px;
     left: 0;
     right: 0;
+    height: 100px;
     z-index: 1000;
+    margin: auto;
+
+
 }
 
 header img {
@@ -25,7 +27,24 @@ button {
     border-radius: 5px;
     text-transform: uppercase;
 }
-
+.container {
+    margin: auto;
+    max-width: 1440px;
+}
+.background-position{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.relative-position{
+    position: relative;
+}
+.fit-content{
+    height: fit-content;
+}
+.w-100{
+    width: 100%;
+}
 .question-icon {
     position: absolute;
     left: 10px;
@@ -35,13 +54,9 @@ button {
     margin: inherit;
 }
 
-.container {
-    margin: auto;
-    max-width: 1440px;
-}
 
 .nav-link {
-    margin-top: 20px;
+    margin: 20px 0px 0px 30px;
 }
 
 .nav-link button {
@@ -53,13 +68,8 @@ button {
 
 }
 
-.button-help {
-    position: relative;
-
-}
 
 .nav-link-right li {
-    font-size: 16px;
     color: #ffffff;
     margin-right: 35px;
 }
@@ -88,20 +98,16 @@ button {
 .button-call-us {
     width: 100px;
 }
-
-main .top-banner {
-    text-align: center;
-    display: grid;
+.text-on-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.text-on-banner {
-    width: 760px;
-    text-align: center;
-    margin: auto;
-    padding: 300px 0px 0px 90px;
 }
 
 .text-on-banner h1 {
@@ -117,11 +123,17 @@ main .top-banner {
     color: #ffffff;
 }
 
+.top-banner {
+    height: 850px;
+    overflow: hidden;
+}
+
 .text-on-banner p {
     font-weight: 400;
     font-size: 26px;
     color: white;
-    white-space: nowrap;
+    width: 785px;
+    text-align: center;
     margin: 45px 0px 45px 0px;
 }
 
@@ -141,14 +153,13 @@ p b {
 
 
 .footer-banner {
-    height: 80px;
-    background-color: #eff7f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    display: flex;
+    height: 80px;
+    background-color: #eff7f7;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
 }
 
@@ -161,41 +172,31 @@ p b {
     color: #8ae2e2;
 }
 
-
-.top-banner {
-    height: 850px;
-    background-color: rgba(23, 49, 83, 0.4);
-    background-blend-mode: darken;
-    background-image: url("images/recalls/top-banner.jpg") !important;
-    background-size: cover;
-    position: relative;
+.background-baner {
+    overflow: hidden;
+    -webkit-filter: opacity(50%);
+    -moz-filter: opacity(50%);
 }
 
-.search-top {
-    color: #0b2a37;
+.bg-banner {
+    background: rgb(23, 49, 83);
+    height: 830px;
 }
+
 
 .search-top-title {
     font-size: 36px;
-    font-weight: 900;
     text-align: center;
     margin: 50px 0px 70px 0px;
 }
 
-.search-top-content p {
-
-    font-size: 16px;
-}
 
 .search-top-content {
-
     display: inline-grid;
     text-align: center;
-    justify-content: center;
     grid-auto-flow: column;
     grid-gap: 85px;
     margin: 0px 45px 130px 45px;
-    grid-template-columns: repeat(4, 270px);
 }
 
 .search-top-content article {
@@ -248,17 +249,18 @@ p b {
     font-weight: 700;
 }
 
+.mobile-count-steps {
+    display: none;
+}
+
 .image-how-it-was {
     height: 570px;
     overflow: hidden;
     margin: 0px;
-    position: relative;
+
 }
 
 .image-how-it-was img {
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
     top: -120px;
 }
 
@@ -275,7 +277,6 @@ p b {
 }
 
 .steps section {
-    position: relative;
     margin-bottom: 50px;
 }
 
@@ -285,9 +286,7 @@ p b {
 }
 
 .steps p {
-    font-size: 16px;
     font-weight: 500;
-
 }
 
 .step-two {
@@ -295,27 +294,18 @@ p b {
 }
 
 .step-one section, .step-three section {
-    width: 50%;
     display: block;
-    margin: 10px 0px 0px 10px;
+    width: 50%;
     float: left;
+    margin: 10px 0px 0px 10px;
 }
-
-.steps img {
-    position: relative;
-
-}
-
 .icon-left {
     float: left;
-    height: fit-content;
-
 }
 
 .icon-right {
-
     float: right;
-    height: fit-content;
+
 }
 
 .step-one, .step-three {
@@ -323,21 +313,31 @@ p b {
 }
 
 .step-two section, .step-four section {
-    margin: 10px 15px 0px 0px;
     width: 45%;
     float: right;
+    margin: 10px 15px 0px 0px;
 }
 
 .right-line {
-    margin-top: 20px;
     position: absolute !important;
     right: -125px;
+    margin-top: 20px;
 }
 
 .left-line {
     position: absolute !important;
     left: 0;
     margin-top: 20px;
+}
+
+.doctor-hand {
+    position: relative;
+    height: 540px;
+    overflow: hidden;
+}
+
+.doctor-hand img {
+    top: -210px;
 }
 
 .recall-title {
@@ -348,29 +348,15 @@ p b {
     margin: 100px 0px 120px 0px;
 
 }
-
-.doctor-hand {
-    overflow: hidden;
-    position: relative;
-    height: 540px;
-}
-
-.doctor-hand img {
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-    top: -265px;
-}
-
 .recall .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0px 35px;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 35px 90px 35px;
+    grid-gap: 65px;
+
 }
 
 .recall .col-1, .col-2, .col-3 {
-    position: relative;
     width: 410px;
     color: #0b2a37;
 }
@@ -382,15 +368,12 @@ p b {
 }
 
 .chat-person {
+    display: flex;
     float: right;
     text-align: end;
-    display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 20px;
 }
 
-.chat-person img {
-    height: fit-content;
-}
 
 .chat-person p {
     margin: 0;
@@ -401,22 +384,20 @@ p b {
 }
 
 .image-preferences {
-    overflow: hidden;
     position: relative;
     height: 540px;
+    overflow: hidden;
+
 }
 
 .preferences-background {
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
     top: -125px;
 }
 
 .preferences {
+    position: relative;
     background: #005173;
     color: #ffffff;
-    position: relative;
     overflow: hidden;
 
 }
@@ -435,17 +416,17 @@ p b {
 }
 
 .preferences-list {
+    display: flex;
     list-style-type: none;
     width: 480px;
-    display: flex;
     flex-direction: column;
     margin-left: 100px;
 }
 
 .peferences-icon {
     position: absolute;
-    right: -115px;
     bottom: -115px;
+    right: -115px;
     overflow: hidden;
 }
 
@@ -454,20 +435,20 @@ p b {
 }
 
 .preferences-right {
+    display: flex;
     order: 2;
     margin-left: 80px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .preferences-right button {
+    width: 275px;
+    height: 70px;
     font-size: 18px;
     font-weight: 700;
-    height: 70px;
     background: none;
     border: 2px solid #ffffff;
-    width: 275px;
     color: #ffffff;
 }
 
@@ -476,11 +457,11 @@ p b {
 }
 
 .preferences-left hr {
+    position: absolute;
     width: 50px;
-    border: none;
     height: 2px;
     float: left;
-    position: absolute;
+    border: none;
     background-color: #8ae2e2;
 
 }
@@ -488,9 +469,6 @@ p b {
 .phone {
     display: block;
     text-align: center;
-}
-
-.phone button {
 }
 
 .footer-bottom {
@@ -514,8 +492,7 @@ p b {
     width: 210px;
     height: 40px;
     background-color: #ff6262;
-    font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     color: #ffffff;
     border: none;
     margin-bottom: 40px;
@@ -560,8 +537,8 @@ p b {
 }
 
 .footer-follow {
-    margin: 85px 0px 0px 100px;
     display: flex;
+    margin: 85px 0px 0px 100px;
     flex-direction: column;
 }
 
@@ -585,23 +562,492 @@ p b {
     gap: 12px;
 }
 
+.steps-title h1 {
+    text-align: left;
+}
+
+.preferences-content {
+    margin: 50px 0px;
+}
+
 @media (min-width: 1200px) {
-
-
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
+    .search-top-content {
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        text-align: center;
+        justify-content: center;
+        grid-auto-flow: row;
+        grid-gap: 85px;
+        margin: 0px 45px 130px 45px;
+    }
 
+    .how-it-was article {
+        display: block;
+        padding: 160px 45px 60px 60px;
+    }
+
+    .image-how-it-was img {
+        top: -55px;
+    }
+
+    .steps-title {
+        display: block;
+        text-align: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .preferences-content {
+        margin: 50px 0px;
+    }
+
+    .preferences-list {
+        display: flex;
+        list-style-type: none;
+        width: 365px;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .chat-text {
+        position: absolute;
+        top: 0;
+        width: 275px;
+        margin: 4px 25px;
+        right: 0;
+    }
+
+    .recall .row {
+        margin: 0px 35px 90px 35px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
+    .text-on-banner {
+        width: 760px;
+        text-align: center;
+        margin: auto;
+        padding: 300px 0px 0px 0px;
+    }
+
+    .chat-text {
+        width: 300px;
+    }
+
+    .row .col-1, .col-2, .col-3 {
+        width: 350px;
+
+    }
+
+    .row img {
+        width: fit-content;
+        float: right;
+
+    }
+
+    .recall .col-1, .col-2, .col-3 {
+        position: relative;
+        width: 100%;
+        color: #0b2a37;
+    }
+
+    .chat-text {
+        top: 0;
+        margin: 10px 13px;
+    }
+
+    .chat-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 275px;
+        margin: 4px 25px;
+    }
+
+    .search-top-content {
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        text-align: center;
+        justify-content: center;
+        grid-auto-flow: row;
+        grid-gap: 85px;
+        margin: 0px 45px 130px 45px;
+    }
+
+    .recall .row {
+        margin: 0px 35px 90px 35px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .image-how-it-was, .doctor-hand {
+        height: 460px;
+    }
+
+    .how-it-was article {
+        display: block;
+        padding: 160px 45px 60px 60px;
+    }
+
+    .image-how-it-was img {
+        top: -55px;
+    }
+
+    .steps-title {
+        display: block;
+        text-align: center;
+        margin-bottom: 55px;
+        text-align: center;
+    }
+
+
+    .steps-title h1 {
+        text-align: left;
+    }
+
+    .doctor-hand img {
+        top: -135px;
+    }
+
+    .preferences-content {
+        margin: 50px 0px;
+    }
+
+
+    .preferences-list {
+        display: flex;
+        width: 365px;
+        list-style-type: none;
+        margin-left: 0;
+        flex-direction: column;
+    }
 
 }
-
 @media (max-width: 767px) {
+    .line-left, .left-line, .right-line, .doctor-hand, .image-preferences {
+        display: none
+    }
 
+    .nav-link-left, .nav-link-right {
+        display: inline-block;
+    }
+
+    .nav-link {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .image-how-it-was {
+        display: none
+    }
+
+    .background-baner {
+        display: block;
+        height: 100%;
+        width: auto;
+        transform: translate(-50%, 0%);
+    }
+
+    .bg-banner {
+        object-fit: cover;
+    }
+
+    .text-on-banner {
+        text-align: center;
+        margin: auto;
+    }
+
+    .text-on-banner h1 {
+        margin: 0;
+        font-size: 48px;
+        color: #8ae2e2;
+        word-spacing: 25px;
+    }
+
+    .text-on-banner h2 {
+        margin: 5px 0px 0px 0px;
+        font-size: 36px;
+        color: #ffffff;
+    }
+
+    .text-on-banner p {
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+    }
+
+    .step-one, .step-three {
+        margin-left: 0px;
+    }
+
+    .recall .col-1, .col-2, .col-3 {
+        position: relative;
+        width: 100%;
+        color: #0b2a37;
+    }
+
+    .chat-text {
+        top: 0;
+        margin: 10px 13px;
+    }
+
+    .search-top-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        grid-gap: 85px;
+    }
+
+    .search-top-content article {
+        grid-template-rows: auto;
+    }
+
+    .recall-title {
+        margin: 55px 0px;
+    }
+
+    .recall .row {
+        margin: 0px 35px 90px 35px;
+        grid-template-columns: 1fr;
+    }
+
+    .image-how-it-was, .doctor-hand {
+        height: 460px;
+    }
+
+    .how-it-was article {
+        display: block;
+        padding: 50px 40px 60px 0px;
+    }
+
+    .steps-title h1 {
+        font-size: 64px;
+        text-align: center;
+    }
+
+    .preferences-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .preferences-right {
+        display: flex;
+        order: 2;
+        margin: 0px 0px 60px 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .preferences-left {
+        margin: auto;
+    }
+
+    .image-how-it-was img {
+        top: -55px;
+    }
+
+    .steps-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .link-info {
+        display: block;
+        margin: 35px 10px 0px 10px;
+
+    }
+
+    .link-info b {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+
+    .link-info ul {
+        margin-bottom: 25px;
+    }
+
+    .footer-follow {
+        margin: 29px 0px 0px 20px;
+    }
+
+    .preferences-list {
+        display: flex;
+        width: 365px;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 10px;
+
+        flex-direction: column;
+    }
+
+    .line-left, .left-line, .right-line {
+        display: none
+    }
 }
-
 @media (max-width: 480px) {
+    .nav-link-left, .nav-link-right {
+        display: inline-block;
+    }
 
+    .nav-link {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .background-baner {
+        display: block;
+        height: 100%;
+        transform: translate(-49%, 0%);
+    }
+
+    .bg-banner {
+        object-fit: cover;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .top-banner {
+        text-align: center;
+    }
+
+    .search-top-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        grid-auto-flow: row;
+        grid-gap: 85px;
+        margin: 0px 45px 130px 45px;
+    }
+
+    .chat-icon {
+        width: 100%;
+    }
+
+    .line-left, .left-line, .right-line, .doctor-hand, .image-preferences {
+        display: none
+    }
+
+    .recall .row {
+        grid-gap: 0px;
+    }
+
+    .how-it-was article {
+        display: block;
+        flex-direction: column;
+        padding: 45px 0px;
+
+    }
+
+    .step-one, .step-three {
+        margin-left: 0px;
+        display: flex;
+    }
+
+    .step-two section, .step-four section {
+        width: 50%;
+    }
+
+    .steps {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .steps section {
+        margin-bottom: 0px;
+    }
+
+    .steps-title h1 {
+        font-size: 45px;
+    }
+
+    .mobile-count-steps {
+        display: contents;
+        font-weight: 900;
+        font-size: 48px;
+    }
+
+    .icon-right, .icon-left {
+        display: none;
+    }
+
+
+    .preferences-list {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        margin: 45px 0px;
+    }
+
+    .preferences-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .peferences-icon {
+        position: absolute;
+        bottom: -45px;
+        right: -70px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .preferences-right {
+        display: flex;
+        order: 2;
+        margin-left: 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .footer-content {
+        display: flex;
+        padding-bottom: 85px;
+        flex-direction: column-reverse;
+    }
+
+    .recall-title {
+        margin: 55px 0px;
+    }
+
+    .steps-title {
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+
+    .link-info {
+        display: block;
+        margin: 35px 10px 0px 10px;
+
+    }
+
+    .link-info b {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+
+    .link-info ul {
+        margin-bottom: 25px;
+    }
+
+    .footer-follow {
+        margin: auto;
+    }
 }
+
+
