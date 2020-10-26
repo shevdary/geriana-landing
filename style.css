@@ -40,6 +40,7 @@ button {
 }
 
 .border-white {
+    background: none;
     border: 2px solid #ffffff;
 }
 
@@ -99,23 +100,20 @@ button {
     margin: 20px 0px 0px 30px;
 }
 
-.nav-link button {
+.nav-link-button {
     height: 40px;
     background: rgba(0, 0, 0, 0);
     color: #ffffff;
 }
 
-.nav-link-right li {
+.nav-link-li {
     color: #ffffff;
     margin-right: 35px;
+    display: inline-block;
 }
 
 .hamburger-menu {
     margin-right: 5px;
-}
-
-.nav-link li {
-    display: inline-block;
 }
 
 .button-help {
@@ -123,7 +121,7 @@ button {
     width: 160px;
 }
 
-.button-call-us {
+.call-us-button {
     width: 100px;
 }
 
@@ -137,13 +135,13 @@ button {
     align-items: center;
 }
 
-.text-on-banner h1 {
+.title-text-on-banner {
     font-size: 80px;
     color: #8ae2e2;
     word-spacing: 25px;
 }
 
-.text-on-banner h2 {
+.subtitle-text-on-banner {
     margin: 5px 0px 0px 0px;
     font-size: 58px;
     color: #ffffff;
@@ -162,7 +160,7 @@ button {
     margin: 45px 0px 45px 0px;
 }
 
-p b {
+.text-aqua {
     color: #8ae2e2;
 }
 
@@ -184,21 +182,17 @@ p b {
     font-size: 18px;
 }
 
-.footer-banner p {
+.medium-text {
     font-weight: 500;
 }
 
-.footer-banner a {
-    color: #8ae2e2;
-}
-
-.background-baner {
+.background-banner {
     overflow: hidden;
     -webkit-filter: opacity(50%);
     -moz-filter: opacity(50%);
 }
 
-.bg-banner {
+.dark-banner {
     background: rgb(23, 49, 83);
     height: 830px;
 }
@@ -215,19 +209,15 @@ p b {
     margin: 0px 45px 130px 45px;
 }
 
-.search-top-content article {
+.search-top-article {
     display: grid !important;
     grid-template-rows: 150px 50px 70px;
     justify-items: center;
 }
 
-.search-top-article h6 {
+.search-top-h6 {
     font-size: 22px;
     margin: 0px;
-}
-
-.search-top-article p {
-    grid-row: 3;
 }
 
 .how-it-was {
@@ -235,7 +225,7 @@ p b {
     color: #ffffff;
 }
 
-.how-it-was article {
+.how-it-was-article {
     display: flex;
     padding: 160px 45px 60px 60px;
 }
@@ -248,12 +238,11 @@ p b {
     margin-right: 25px;
 }
 
-.steps-title h1 {
+.steps-title-h1 {
     margin: 45px 0px 40px 0px;
 }
 
-.steps-title button {
-    background: none;
+.steps-title-button {
     height: 70px;
     width: 270px;
     font-size: 18px;
@@ -261,18 +250,13 @@ p b {
     margin: 0px 5px;
 }
 
-.mobile-count-steps {
-    display: none;
-}
-
-.image-how-it-was {
+.background-how-it-was {
     height: 570px;
     overflow: hidden;
     margin: 0px;
-
 }
 
-.image-how-it-was img {
+.how-it-was-child {
     top: -120px;
 }
 
@@ -288,35 +272,31 @@ p b {
     text-align: end;
 }
 
-.steps section {
+.steps-section {
     margin-bottom: 50px;
 }
 
-.steps b {
+.steps-b {
     font-size: 22px;
-}
-
-.steps p {
-    font-weight: 500;
 }
 
 .step-two {
     margin-bottom: 25px !important;
 }
 
-.step-one section, .step-three section {
+.step-left {
     display: block;
     width: 50%;
+    margin: 10px 15px 0px 0px;
+}
+
+.step-right {
+    width: 45%;
     margin: 10px 0px 0px 10px;
 }
 
-.step-one, .step-three {
+.step-content-left {
     margin-left: 115px;
-}
-
-.step-two section, .step-four section {
-    width: 45%;
-    margin: 10px 15px 0px 0px;
 }
 
 .right-line {
@@ -331,13 +311,13 @@ p b {
     margin-top: 20px;
 }
 
-.doctor-hand {
+.doctor-image {
     position: relative;
     height: 540px;
     overflow: hidden;
 }
 
-.doctor-hand img {
+.doctor-image-child {
     top: -210px;
 }
 
@@ -348,7 +328,7 @@ p b {
     margin: 100px 0px 120px 0px;
 }
 
-.recall .row {
+.recall-row {
     margin: 0px 35px 90px 35px;
     grid-gap: 65px;
 }
@@ -369,7 +349,7 @@ p b {
     margin-bottom: 20px;
 }
 
-.chat-person section {
+.chat-person-section {
     margin: auto 10px;
 }
 
@@ -411,13 +391,13 @@ p b {
     margin-left: 100px;
 }
 
-.peferences-icon {
+.preferences-icon {
     bottom: -115px;
     right: -115px;
     overflow: hidden;
 }
 
-.preferences-list li {
+.preferences-list-ul {
     margin-bottom: 10px;
 }
 
@@ -538,9 +518,18 @@ p b {
     gap: 12px;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1224px) {
+
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+
+@media (min-width: 992px) and (max-width: 1223px) {
+    .background-banner {
+        display: block;
+        height: 100%;
+        width: auto;
+        transform: translate(-20%, 0%);
+    }
+
     .search-top-content {
         display: grid;
         grid-template-columns: repeat(2, 270px);
@@ -551,12 +540,13 @@ p b {
         margin: 0px 45px 130px 45px;
     }
 
-    .how-it-was article {
+    .how-it-was-article {
         display: block;
         padding: 160px 45px 60px 60px;
+        text-align: -webkit-center;
     }
 
-    .image-how-it-was img {
+    .how-it-was-child {
         top: -55px;
     }
 
@@ -570,48 +560,49 @@ p b {
         margin: 50px 0px;
     }
 
-    .preferences-list {
-        display: flex;
-        list-style-type: none;
-        width: 365px;
-        margin-left: 0;
-        flex-direction: column;
+    .steps {
+        margin-right: 215px;
     }
+
 
     .chat-text {
-        position: absolute;
-        top: 0;
-        width: 275px;
-        margin: 4px 25px;
-        right: 0;
     }
 
-    .recall .row {
+    .recall-row {
         margin: 0px 35px 90px 35px;
+        justify-items: center;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .nav-link-left, .nav-link-right {
+        display: inline-block;
+    }
+
+    .nav-link-left button {
+        display: none;
+    }
+
+    .background-banner {
+        width: auto;
+        display: block;
+        height: 100%;
+        transform: translate(-25%, 0%);
+    }
+
     .text-on-banner {
-        width: 760px;
         text-align: center;
         margin: auto;
-        padding: 300px 0px 0px 0px;
     }
 
-    .chat-text {
-        width: 300px;
-    }
-
-    .row .col-1, .col-2, .col-3 {
-        width: 350px;
-
-    }
-
-    .row img {
-        width: fit-content;
+    .chat-icon {
         float: right;
+        width: 340px;
+    }
+
+    .recall-row {
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
@@ -644,22 +635,20 @@ p b {
         margin: 0px 45px 130px 45px;
     }
 
-    .recall .row {
-        margin: 0px 35px 90px 35px;
-        grid-template-columns: repeat(2, 1fr);
-
+    .background-how-it-was {
+        height: 350px;
     }
 
-    .image-how-it-was, .doctor-hand {
+    .image-how-it-was, .doctor-image {
         height: 460px;
     }
 
-    .how-it-was article {
+    .how-it-was-article {
         display: block;
         padding: 160px 45px 60px 60px;
     }
 
-    .image-how-it-was img {
+    .how-it-was-child {
         top: -55px;
     }
 
@@ -669,12 +658,11 @@ p b {
         margin-bottom: 55px;
     }
 
-
-    .steps-title h1 {
+    .steps-title-h1 {
         text-align: left;
     }
 
-    .doctor-hand img {
+    .doctor-image-child {
         top: -135px;
     }
 
@@ -694,7 +682,7 @@ p b {
 }
 
 @media (max-width: 767px) {
-    .line-left, .left-line, .right-line, .doctor-hand, .image-preferences {
+    .line-left, .left-line, .right-line, .doctor-image, .image-preferences {
         display: none
     }
 
@@ -712,14 +700,14 @@ p b {
         display: none
     }
 
-    .background-baner {
+    .background-banner {
         display: block;
         height: 100%;
         width: auto;
         transform: translate(-50%, 0%);
     }
 
-    .bg-banner {
+    .dark-banner {
         object-fit: cover;
     }
 
@@ -728,28 +716,31 @@ p b {
         margin: auto;
     }
 
-    .text-on-banner h1 {
+    .title-text-on-banner {
         margin: 0;
         font-size: 48px;
         color: #8ae2e2;
         word-spacing: 25px;
     }
 
-    .text-on-banner h2 {
+    .subtitle-text-on-banner {
         margin: 5px 0px 0px 0px;
         font-size: 36px;
         color: #ffffff;
     }
 
+    .text-16 {
+        font-size: 16px;
+    }
+
     .text-on-banner p {
         width: 100%;
         font-weight: 400;
-        font-size: 16px;
         color: white;
     }
 
-    .step-one, .step-three {
-        margin-left: 0px;
+    .step-left {
+        margin-left: 15px;
     }
 
     .recall .col-1, .col-2, .col-3 {
@@ -770,7 +761,7 @@ p b {
         grid-gap: 85px;
     }
 
-    .search-top-content article {
+    .search-top-article {
         grid-template-rows: auto;
     }
 
@@ -778,21 +769,21 @@ p b {
         margin: 55px 0px;
     }
 
-    .recall .row {
+    .recall-row {
         margin: 0px 35px 90px 35px;
         grid-template-columns: 1fr;
     }
 
-    .image-how-it-was, .doctor-hand {
+    .image-how-it-was, .doctor-image {
         height: 460px;
     }
 
-    .how-it-was article {
+    .how-it-was-article {
         display: block;
         padding: 50px 40px 60px 0px;
     }
 
-    .steps-title h1 {
+    .steps-title-h1 {
         font-size: 64px;
         text-align: center;
     }
@@ -815,7 +806,7 @@ p b {
         margin: auto;
     }
 
-    .image-how-it-was img {
+    .how-it-was-child {
         top: -55px;
     }
 
@@ -850,6 +841,7 @@ p b {
         margin-left: 0;
         padding-left: 0px;
     }
+
     .preferences-list li {
         margin: 0px 10px 10px 10px;
     }
@@ -870,13 +862,13 @@ p b {
         white-space: nowrap;
     }
 
-    .background-baner {
+    .background-banner {
         display: block;
         height: 100%;
         transform: translate(-49%, 0%);
     }
 
-    .bg-banner {
+    .dark-banner {
         object-fit: cover;
         position: absolute;
         overflow: hidden;
@@ -884,9 +876,6 @@ p b {
 
     .top-banner {
         text-align: center;
-    }
-    .footer-banner p, a{
-        font-size: 16px;
     }
 
     .search-top-content {
@@ -899,28 +888,29 @@ p b {
         margin: 0px 45px 130px 45px;
     }
 
-    .line-left, .left-line, .right-line, .doctor-hand, .image-preferences {
+    .line-left, .left-line, .right-line, .doctor-image, .image-preferences, .background-how-it-was {
         display: none
     }
 
-    .recall .row {
+    .recall-row {
         grid-gap: 0px;
     }
 
-    .how-it-was article {
+    .how-it-was-article {
         display: block;
         flex-direction: column;
         padding: 45px 0px;
 
     }
 
-    .step-one, .step-three {
+    .step-one {
         margin-left: 0px;
         display: flex;
     }
 
-    .step-two section, .step-four section {
+    .step-right {
         width: 50%;
+        margin: 0px 10px 10px;
     }
 
     .steps {
@@ -930,18 +920,16 @@ p b {
 
     }
 
-    .steps section {
+    .step-content-left {
+        margin-left: 0;
+    }
+
+    .steps-section {
         margin-bottom: 0px;
     }
 
-    .steps-title h1 {
+    .steps-title-h1 {
         font-size: 45px;
-    }
-
-    .mobile-count-steps {
-        display: contents;
-        font-weight: 900;
-        font-size: 48px;
     }
 
     .icon-right, .icon-left {
@@ -949,16 +937,20 @@ p b {
     }
 
     .preferences-list {
-        margin: 45px 0px;
-    }
-    .preferences-list li {
+        width: 90%;
         margin: 0px 10px 10px 10px;
     }
-    .preferences-content{
+
+    .preferences-left ul {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .preferences-content {
         margin-bottom: 70px;
     }
 
-    .peferences-icon {
+    .preferences-icon {
         position: absolute;
         bottom: -45px;
         right: -70px;
@@ -1013,5 +1005,3 @@ p b {
         margin: auto;
     }
 }
-
-
