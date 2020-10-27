@@ -8,10 +8,12 @@
       top: -210px;
     }
   }
-  .recall-row{
+
+  .recall-row {
+    place-items: center;
     margin-bottom: 195px;
-    margin-left: 35px;
   }
+
   .col-1, .col-2, .col-3 {
     width: 410px;
     color: #0b2a37;
@@ -24,6 +26,7 @@
     margin: 100px 0px 120px 0px;
 
     .recall-row {
+
       margin: 0px 35px 90px 35px;
       grid-gap: 65px;
     }
@@ -43,6 +46,27 @@
 
   .chat-person-section {
     margin: auto 10px;
+  }
+}
+
+@media screen and (max-width: 1244px) {
+  .col-1, .col-2, .col-3 {
+    width: 100% !important;
+  }
+  .recall .chat-text {
+    top: 0;
+    margin: 25px 20px;
+  }
+  .recall .recall-row {
+    margin-right: 25px;
+  }
+  .grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+  .chat-icon {
+    width: inherit;
   }
 }
 

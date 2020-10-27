@@ -72,6 +72,7 @@
         width: 50%;
         margin: 10px 15px 0px 0px;
       }
+
       .right-line {
         position: absolute !important;
         right: -125px;
@@ -86,9 +87,40 @@
 
     }
   }
-
-
 }
+
+@media screen and (max-width: 1244px) {
+  .how-it-was {
+    .how-it-was-article {
+      padding: 0px;
+      flex-direction: column;
+
+      .steps-title {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .steps-title-h1, .steps-title-button {
+          margin-left: 45px;
+        }
+      }
+    }
+
+    .icon-right {
+      margin-right: 125px;
+    }
+
+    .steps {
+      width: 55% !important;
+      align-self: flex-end;
+
+      .right-line {
+        right: 25px !important;
+      }
+    }
+  }
+}
+
+
 @media (min-width: 992px) and (max-width: 1223px) {
   .how-it-was-child {
     top: -55px;
