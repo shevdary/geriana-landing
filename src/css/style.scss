@@ -1,144 +1,148 @@
 
 html, body {
-    margin: auto;
-    padding: 0;
-    font-family: 'Maven Pro', sans-serif;
-    color: #0b2a37;
-    font-size: 16px;
+  margin: auto;
+  padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+  color: #0b2a37;
+  font-size: 16px;
 }
 
 header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 100px;
-    z-index: 1000;
-    margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 1000;
+  margin: auto;
 }
 
 header img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 button {
-    border-radius: 5px;
-    text-transform: uppercase;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
-    margin: auto;
-    max-width: 1440px;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .m-0 {
-    margin: 0;
+  margin: 0;
 }
 
 .border-white {
-    background: none;
-    border: 2px solid #ffffff;
+  background: none;
+  border: 2px solid #ffffff;
 }
 
 .text-bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .background-position {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .relative-position {
-    position: relative;
+  position: relative;
 }
 
 .position-absolute {
-    position: absolute;
+  position: absolute;
 }
 
 .fit-content {
-    height: fit-content;
+  height: fit-content;
 }
 
 
 .grid-3-col {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 .float-left {
-    float: left;
+  float: left;
 }
 
 .text-aqua {
-    color: #8ae2e2;
+  color: #8ae2e2;
 }
 
 .medium-text {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .steps-section {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1880px) {
-    .background-how-it-was, .recall .doctor-image,.image-preferences {
-        height: 750px;
-    }
+  .background-how-it-was, .recall .doctor-image, .image-preferences {
+    height: 750px;
+  }
+  .nav-link {
+    margin: 20px auto;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1223px) {
 
-    .how-it-was-article {
-        display: block;
-        padding: 160px 45px 60px 60px;
-        text-align: -webkit-center;
-    }
+  .how-it-was-article {
+    display: block;
+    padding: 160px 45px 60px 60px;
+    text-align: -webkit-center;
+  }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .image-how-it-was, .doctor-image {
-        height: 460px;
-    }
+  .image-how-it-was, .doctor-image {
+    height: 460px;
+  }
 
 }
 
 @media (max-width: 767px) {
-    .line-left, .left-line, .right-line, .doctor-image, .image-preferences, .image-how-it-was {
-        display: none
-    }
+  .line-left, .left-line, .right-line, .doctor-image, .image-preferences, .image-how-it-was {
+    display: none
+  }
 
-    .text-16 {
-        font-size: 16px !important;
-    }
+  .text-16 {
+    font-size: 16px !important;
+  }
 }
 
 @media (max-width: 480px) {
 
-    .line-left, .left-line, .right-line, .doctor-image, .image-preferences, .background-how-it-was {
-        display: none
-    }
+  .line-left, .left-line, .right-line, .doctor-image, .image-preferences, .background-how-it-was {
+    display: none
+  }
 
 }
+
 @import "_header.scss";
 @import "_banner.scss";
 @import "_search-top.scss";
