@@ -1,0 +1,140 @@
+.top-banner {
+  height: 850px;
+  overflow: hidden;
+
+  .dark-banner {
+    background: rgb(23, 49, 83);
+    height: 830px;
+
+    .background-banner {
+      overflow: hidden;
+      -webkit-filter: opacity(50%);
+      -moz-filter: opacity(50%);
+    }
+  }
+
+  .text-on-banner {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 26px;
+      color: white;
+      width: 785px;
+      margin: 45px 0px 45px 0px;
+    }
+
+    button {
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #ff5151;
+      border: none;
+      height: 70px;
+      width: 274px;
+    }
+
+    .title-text-on-banner {
+      font-size: 80px;
+      color: #8ae2e2;
+      word-spacing: 25px;
+    }
+
+    .subtitle-text-on-banner {
+      margin: 5px 0px 0px 0px;
+      font-size: 58px;
+      color: #ffffff;
+    }
+  }
+
+  .footer-banner {
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    background-color: #eff7f7;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1223px) {
+  .background-banner {
+    display: block;
+    height: 100%;
+    width: auto;
+    transform: translate(-20%, 0%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .background-banner {
+    width: auto;
+    display: block;
+    height: 100%;
+    transform: translate(-25%, 0%);
+  }
+
+  .text-on-banner {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .background-banner {
+    display: block;
+    height: 100%;
+    width: auto;
+    transform: translate(-50%, 0%);
+  }
+  .dark-banner {
+    object-fit: cover;
+  }
+
+  .text-on-banner {
+    text-align: center;
+    margin: auto;
+
+    p {
+      width: 100% !important;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  .title-text-on-banner {
+    margin: 0;
+    font-size: 48px !important;
+    color: #8ae2e2;
+    word-spacing: 25px;
+  }
+
+  .subtitle-text-on-banner {
+    margin: 5px 0px 0px 0px;
+    font-size: 36px !important;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-banner {
+    text-align: center;
+
+    .dark-banner {
+      object-fit: cover;
+      position: absolute;
+      overflow: hidden;
+
+      .background-banner {
+        display: block;
+        height: 100%;
+        transform: translate(-50%, 0%);
+      }
+    }
+  }
+}

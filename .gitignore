@@ -1,0 +1,8 @@
+/build/*
+/build
+./.idea/*
+./.idea
+/src/css/style.css
+/src/css/style.css.map
+./node_modules/*
+./node_modules

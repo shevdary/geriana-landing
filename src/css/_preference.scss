@@ -1,0 +1,161 @@
+
+.image-preferences {
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+}
+
+.preferences-background {
+  top: -125px;
+}
+
+
+.preferences {
+  position: relative;
+  background: #005173;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.preferences-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 135px;
+  margin-top: 135px;
+}
+
+.preferences-title {
+  font-weight: 900;
+  font-size: 80px;
+  margin: 0px 0px 55px 0px;
+}
+
+.preferences-list {
+  display: flex;
+  list-style-type: none;
+  width: 480px;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.preferences-icon {
+  bottom: -115px;
+  right: -115px;
+  overflow: hidden;
+}
+
+.preferences-list-ul {
+  margin-bottom: 10px;
+}
+
+.preferences-right {
+  display: flex;
+  order: 2;
+  margin-left: 80px;
+  flex-direction: column;
+
+  button {
+    width: 275px;
+    height: 70px;
+    font-size: 18px;
+    background: none;
+    color: #ffffff;
+  }
+}
+
+.preferences-left {
+  order: 1;
+  hr {
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: #8ae2e2;
+  }
+   ul {
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1223px) {
+  .preferences-content {
+    margin: 50px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .preferences-content {
+    margin: 50px 0px;
+  }
+
+  .preferences-list {
+    display: flex;
+    width: 365px;
+    list-style-type: none;
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .preferences-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .preferences-right {
+    display: flex;
+    order: 2;
+    margin: 0px 0px 60px 0px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .preferences-left {
+    margin: auto;
+  }
+  .preferences-list {
+    width: 365px;
+    margin-left: 0;
+    padding-left: 0px;
+  }
+
+  .preferences-list li {
+    margin: 0px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .preferences-list {
+    width: 90%;
+    margin: 0px 10px 10px 10px;
+  }
+
+  .preferences-left ul {
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  .preferences-content {
+    margin-bottom: 70px;
+  }
+
+  .preferences-icon {
+    position: absolute;
+    bottom: -45px;
+    right: -70px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .preferences-right {
+    display: flex;
+    order: 2;
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
