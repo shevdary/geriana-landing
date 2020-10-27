@@ -98,8 +98,10 @@ button {
     margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 1224px) {
-
+@media screen and (min-width: 1880px) {
+    .background-how-it-was, .recall .doctor-image,.image-preferences {
+        height: 750px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1223px) {
