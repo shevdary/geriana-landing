@@ -538,6 +538,10 @@ button {
   .image-preferences {
     height: 750px;
   }
+
+  .nav-link {
+    margin: 20px auto;
+  }
 }
 
 @media (max-width: 767px) {
