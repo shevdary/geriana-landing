@@ -1,11 +1,11 @@
-let project_folder = "build";
+let project_folder = "build/";
 let source_folder = "src";
 
 let path = {
   build: {
-    html: project_folder + "/",
-    css: project_folder + "/css/",
-    img: project_folder + "/images/"
+    html: project_folder + "",
+    css: project_folder + "css/",
+    img: project_folder + "images/"
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -22,7 +22,7 @@ let path = {
   },
   clean: "./" + project_folder + "/"
 };
-let { src, dest } = require("gulp"),
+const { src, dest } = require("gulp"),
   gulp = require("gulp"),
   browsersync = require("browser-sync").create(),
   fileinclude = require("gulp-file-include"),
@@ -31,7 +31,8 @@ let { src, dest } = require("gulp"),
   imagemin = require("gulp-imagemin"),
   gulp_autoprefixer = require("gulp-autoprefixer"),
   scss = require("gulp-sass"),
-  group_media = require("gulp-group-css-media-queries");
+  group_media = require("gulp-group-css-media-queries"),
+    ghPages = require('gh-pages');
 
 function browcerSync(param) {
   console.log(path.watch.html);
@@ -50,7 +51,9 @@ function watchFiles(params) {
 function clean(params) {
   return del(path.clean);
 }
-
+function deploy(cb) {
+    ghPages.publish((project_folder), cb);
+}
 function html() {
   return src(path.src.html)
     .pipe(fileinclude())
@@ -94,6 +97,7 @@ function images() {
 let build = gulp.series(clean, gulp.parallel(css, html, images));
 let watch = gulp.parallel(build, watchFiles, browcerSync);
 
+exports.deploy = deploy;
 exports.images = images;
 exports.css = css;
 exports.html = html;
