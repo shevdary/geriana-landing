@@ -323,8 +323,8 @@ button {
 }
 
 .recall .recall-row {
+  place-items: center;
   margin-bottom: 195px;
-  margin-left: 35px;
 }
 
 .recall .col-1,
@@ -541,6 +541,61 @@ button {
 
   .nav-link {
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 1244px) {
+  .how-it-was .how-it-was-article {
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .how-it-was .how-it-was-article .steps-title {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .how-it-was .how-it-was-article .steps-title .steps-title-h1,
+  .how-it-was .how-it-was-article .steps-title .steps-title-button {
+    margin-left: 45px;
+  }
+
+  .how-it-was .icon-right {
+    margin-right: 125px;
+  }
+
+  .how-it-was .steps {
+    width: 55% !important;
+    align-self: flex-end;
+  }
+
+  .how-it-was .steps .right-line {
+    right: 25px !important;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100% !important;
+  }
+
+  .recall .chat-text {
+    top: 0;
+    margin: 25px 20px;
+  }
+
+  .recall .recall-row {
+    margin-right: 25px;
+  }
+
+  .grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+
+  .chat-icon {
+    width: inherit;
   }
 }
 
