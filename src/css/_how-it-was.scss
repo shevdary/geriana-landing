@@ -1,0 +1,196 @@
+.background-how-it-was {
+  height: 570px;
+  overflow: hidden;
+  margin: 0px;
+
+  .how-it-was-child {
+    top: -120px;
+  }
+}
+
+.how-it-was {
+  background-color: #66cfcf;
+  color: #ffffff;
+
+  .how-it-was-article {
+    display: flex;
+    padding: 105px 45px 60px 60px;
+
+    .steps-title {
+      font-family: 'Maven Pro', sans-serif;
+      font-weight: 900;
+      font-size: 80px;
+      width: 45%;
+      margin-right: 60px;
+
+      .steps-title-h1 {
+        margin: 45px 0px 40px 0px;
+      }
+
+      .steps-title-button {
+        height: 70px;
+        width: 270px;
+        font-size: 18px;
+        color: #ffffff;
+        margin: 0px 5px;
+      }
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+
+      .step-two {
+        margin-bottom: 25px !important;
+        right: 0px;
+        place-self: flex-end;
+        text-align: end;
+      }
+
+      .step-four {
+        right: 0px;
+        place-self: flex-end;
+        text-align: end;
+      }
+
+      .step-content-left {
+        margin-left: 115px;
+      }
+
+      .steps-b {
+        font-size: 22px;
+      }
+
+      .step-right {
+        width: 45%;
+        margin: 10px 0px 0px 10px;
+      }
+
+      .step-left {
+        display: block;
+        width: 50%;
+        margin: 10px 15px 0px 0px;
+      }
+      .right-line {
+        position: absolute !important;
+        right: -125px;
+        margin-top: 20px;
+      }
+
+      .left-line {
+        position: absolute !important;
+        left: 0;
+        margin-top: 20px;
+      }
+
+    }
+  }
+
+
+}
+@media (min-width: 992px) and (max-width: 1223px) {
+  .how-it-was-child {
+    top: -55px;
+  }
+  .steps-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .steps {
+    margin-right: 215px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .background-how-it-was {
+    height: 350px;
+  }
+  .how-it-was-child {
+    top: -55px;
+  }
+
+  .steps-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .steps-title-h1 {
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .image-how-it-was, .doctor-image {
+    height: 460px;
+  }
+
+
+  .how-it-was-child {
+    top: -55px;
+  }
+
+  .how-it-was {
+    .how-it-was-article {
+      display: block;
+      padding: 50px 40px 60px 0px;
+
+      .steps-title {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .steps-title-h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+  .step-left {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-was .how-it-was-article {
+    display: block;
+    flex-direction: column;
+    padding: 45px 10px !important;
+  }
+  .steps-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .steps-title-h1 {
+    font-size: 45px;
+  }
+  .steps-section {
+    margin-bottom: 0px;
+  }
+  .steps {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .step-one {
+    margin-left: 0px;
+    display: flex;
+
+  }
+  .step-content-left {
+    margin-left: 0 !important;
+  }
+  .step-right {
+    width: 50%;
+    margin: 0px 10px 10px;
+  }
+  .icon-right, .icon-left {
+    display: none;
+  }
+}

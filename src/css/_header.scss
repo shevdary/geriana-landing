@@ -1,0 +1,73 @@
+.nav-link {
+  margin-top: 20px;
+  margin-left: 30px;
+  .nav-link-left {
+    .nav-link-button {
+      height: 40px;
+      background: rgba(0, 0, 0, 0);
+      color: #ffffff;
+
+      .question-button {
+        margin: inherit;
+
+        .question-icon {
+          left: 10px;
+        }
+      }
+    }
+
+    .button-help {
+      margin: 0px 10px 0px 25px;
+      width: 160px;
+    }
+
+    .call-us-button {
+      width: 100px;
+    }
+  }
+
+  .nav-link-right {
+    .nav-link-li {
+      color: #ffffff;
+      margin-right: 35px;
+      display: inline-block;
+    }
+
+    .hamburger-menu-icon {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-link-left, .nav-link-right {
+    display: inline-block;
+  }
+  .nav-link-left button {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-link-left, .nav-link-right {
+    display: inline-block;
+  }
+
+  .nav-link {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link-left, .nav-link-right {
+    display: inline-block;
+  }
+
+  .nav-link {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
