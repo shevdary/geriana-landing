@@ -32,9 +32,24 @@
       color: #ffffff;
       margin-right: 35px;
       display: inline-block;
+
+      .nav-link-a {
+        text-decoration: none;
+        color: #ffffff;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+      }
+
+      .nav-link-a:hover {
+        background-size: 100% 2px;
+      }
     }
 
     .hamburger-menu-icon {
+
       margin-right: 10px;
     }
   }

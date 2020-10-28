@@ -1,8 +1,9 @@
 .background-how-it-was {
-  height: 570px;
+ height: 570px;
   overflow: hidden;
-  margin: 0px;
-
+  background:url("../images/background/help.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
   .how-it-was-child {
     top: -120px;
   }

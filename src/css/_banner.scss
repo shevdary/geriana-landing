@@ -1,18 +1,14 @@
+
+.top-banner{
+  background-image:url("../images/top-banner/top-banner.jpg") ;
+  background-size: cover;
+  background-color: rgba(0,81,115,0.4);
+  background-blend-mode: multiply;
+  background-position: 100% 15%;
+}
 .top-banner {
   height: 850px;
   overflow: hidden;
-
-  .dark-banner {
-    background: rgb(23, 49, 83);
-    height: 830px;
-
-    .background-banner {
-      overflow: hidden;
-      -webkit-filter: opacity(50%);
-      -moz-filter: opacity(50%);
-    }
-  }
-
   .text-on-banner {
     top: 0;
     right: 0;
@@ -77,6 +73,10 @@
     display: block;
     height: 100%;
     transform: translate(-25%, 0%);
+    background-position: 70%;
+  }
+  .top-banner{
+    background-position: 70%;
   }
 
   .text-on-banner {
@@ -91,9 +91,10 @@
     height: 100%;
     width: auto;
     transform: translate(-50%, 0%);
+
   }
-  .dark-banner {
-    object-fit: cover;
+  .top-banner{
+    background-position: 70%;
   }
 
   .text-on-banner {
@@ -124,7 +125,9 @@
 @media (max-width: 480px) {
   .top-banner {
     text-align: center;
-
+    .banner-back{
+      background-position: 70%;
+    }
     .dark-banner {
       object-fit: cover;
       position: absolute;

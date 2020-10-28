@@ -3,19 +3,21 @@
   position: relative;
   height: 540px;
   overflow: hidden;
+  background: url("../images/background/preferences-back.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
-
-.preferences-background {
-  top: -125px;
-}
-
 
 .preferences {
   position: relative;
-  background: #005173;
+  background: #005173 url("../images/preferences/logo-shape.png");
   color: #ffffff;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 5%) calc(100% + 20%);
+  background-size: 45%;
 }
+
 
 .preferences-content {
   display: grid;
@@ -86,6 +88,18 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .preferences {
+    background-position: calc(100% + 15%) calc(100% + 15%);
+    background-size: 55%;
+
+    .preferences-left {
+      margin-left: 20px;
+    }
+  }
+  .image-preferences {
+    height: 350px;
+    background-position: 50% 50%;
+  }
   .preferences-content {
     margin: 50px 0px;
   }
@@ -100,7 +114,14 @@
 }
 
 @media (max-width: 767px) {
-
+  .preferences {
+    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-size: 65%;
+  }
+  .image-preferences {
+    height: 250px;
+    background-position: 50% 50%;
+  }
   .preferences-content {
     display: flex;
     flex-direction: column-reverse;
@@ -116,7 +137,7 @@
   }
 
   .preferences-left {
-    margin: auto;
+    margin: auto !important;
   }
   .preferences-list {
     width: 365px;
@@ -130,6 +151,10 @@
 }
 
 @media (max-width: 480px) {
+  .preferences {
+    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-size: 65%;
+  }
   .preferences-list {
     width: 90%;
     margin: 0px 10px 10px 10px;

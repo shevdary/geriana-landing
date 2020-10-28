@@ -3,10 +3,9 @@
     position: relative;
     height: 540px;
     overflow: hidden;
-
-    .doctor-image-child {
-      top: -210px;
-    }
+    background:url("../images/background/doctor.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
   }
 
   .recall-row {
@@ -76,23 +75,26 @@
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
+  .doctor-image{
+    height:350px ;
+    background-position: 50% 50%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .doctor-image {
+    height:250px !important;
+    background-position: 50% 50%;
+  }
   .recall-row {
     grid-template-columns: repeat(2, 1fr);
-
   }
   .recall .col-1, .col-2, .col-3 {
     position: relative;
     width: 100%;
     color: #0b2a37;
   }
-  .doctor-image {
-    .doctor-image-child {
-      top: -135px;
-    }
-  }
+
   .chat-icon {
     float: right;
     width: 340px;
@@ -112,6 +114,10 @@
 }
 
 @media (max-width: 767px) {
+  .doctor-image {
+    height:250px ;
+    background-position: 50% 50%;
+  }
   .recall-title {
     margin: 55px 0px;
   }
