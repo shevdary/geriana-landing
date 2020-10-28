@@ -1,9 +1,10 @@
 .background-how-it-was {
- height: 570px;
+  height: 570px;
   overflow: hidden;
-  background:url("../images/background/help.jpg");
+  background: url("../images/background/help.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 40%;
+
   .how-it-was-child {
     top: -120px;
   }
@@ -87,6 +88,10 @@
       }
 
     }
+
+    .icon-left, .icon-right {
+      margin: 0px 5px;
+    }
   }
 }
 
@@ -98,11 +103,7 @@
 
       .steps-title {
         width: 100%;
-        margin-bottom: 50px;
-
-        .steps-title-h1, .steps-title-button {
-          margin-left: 45px;
-        }
+        padding: 50px 0px;
       }
     }
 
@@ -111,7 +112,6 @@
     }
 
     .steps {
-      width: 55% !important;
       align-self: flex-end;
 
       .right-line {
@@ -169,7 +169,6 @@
   .how-it-was {
     .how-it-was-article {
       display: block;
-      padding: 50px 40px 60px 0px;
 
       .steps-title {
         display: block;
@@ -189,10 +188,19 @@
 }
 
 @media (max-width: 480px) {
-  .how-it-was .how-it-was-article {
-    display: block;
-    flex-direction: column;
-    padding: 45px 10px !important;
+  .how-it-was {
+    .how-it-was-article {
+      display: block;
+      flex-direction: column;
+
+      .float-left, .float-right {
+        width: auto !important;
+
+        .steps-b {
+          border-bottom: #ffffff 2px solid;
+        }
+      }
+    }
   }
   .steps-title {
     font-family: 'Maven Pro', sans-serif;
@@ -210,6 +218,7 @@
     display: flex;
     width: 100% !important;
     flex-direction: column;
+    padding-bottom: 75px;
   }
   .step-one {
     margin-left: 0px;
@@ -220,10 +229,16 @@
     margin-left: 0 !important;
   }
   .step-right {
-    width: 50%;
-    margin: 0px 10px 10px;
+    margin: 10px !important;
+  }
+  .step-left {
+    margin: 10px !important;
   }
   .icon-right, .icon-left {
     display: none;
   }
+  .steps-title-h1 {
+    margin-left: 0px !important;
+  }
+
 }

@@ -1,14 +1,16 @@
 
-.top-banner{
-  background-image:url("../images/top-banner/top-banner.jpg") ;
+.top-banner {
+  background-image: url("../images/top-banner/top-banner.jpg");
   background-size: cover;
-  background-color: rgba(0,81,115,0.4);
+  background-color: rgba(0, 81, 115, 0.4);
   background-blend-mode: multiply;
   background-position: 100% 15%;
 }
+
 .top-banner {
   height: 850px;
   overflow: hidden;
+
   .text-on-banner {
     top: 0;
     right: 0;
@@ -75,7 +77,7 @@
     transform: translate(-25%, 0%);
     background-position: 70%;
   }
-  .top-banner{
+  .top-banner {
     background-position: 70%;
   }
 
@@ -93,7 +95,7 @@
     transform: translate(-50%, 0%);
 
   }
-  .top-banner{
+  .top-banner {
     background-position: 70%;
   }
 
@@ -125,9 +127,11 @@
 @media (max-width: 480px) {
   .top-banner {
     text-align: center;
-    .banner-back{
+
+    .banner-back {
       background-position: 70%;
     }
+
     .dark-banner {
       object-fit: cover;
       position: absolute;
