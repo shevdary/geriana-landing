@@ -131,24 +131,35 @@ button {
   display: inline-block;
 }
 
+.nav-link .nav-link-right .nav-link-li .nav-link-a {
+  text-decoration: none;
+  color: #ffffff;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.nav-link .nav-link-right .nav-link-li .nav-link-a:hover {
+  background-size: 100% 2px;
+}
+
 .nav-link .nav-link-right .hamburger-menu-icon {
   margin-right: 10px;
 }
 
 .top-banner {
+  background-image: url("../images/top-banner/top-banner.jpg");
+  background-size: cover;
+  background-color: rgba(0, 81, 115, 0.4);
+  background-blend-mode: multiply;
+  background-position: 100% 15%;
+}
+
+.top-banner {
   height: 850px;
   overflow: hidden;
-}
-
-.top-banner .dark-banner {
-  background: #173153;
-  height: 830px;
-}
-
-.top-banner .dark-banner .background-banner {
-  overflow: hidden;
-  -webkit-filter: opacity(50%);
-  -moz-filter: opacity(50%);
 }
 
 .top-banner .text-on-banner {
@@ -213,7 +224,7 @@ button {
 
 .search-top .search-top-content .search-top-article {
   display: grid !important;
-  grid-template-rows: 150px 50px 70px;
+  grid-template-rows: 50% 25% 5%;
   justify-items: center;
 }
 
@@ -225,7 +236,9 @@ button {
 .background-how-it-was {
   height: 570px;
   overflow: hidden;
-  margin: 0px;
+  background: url("../images/background/help.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .background-how-it-was .how-it-was-child {
@@ -316,10 +329,9 @@ button {
   position: relative;
   height: 540px;
   overflow: hidden;
-}
-
-.recall .doctor-image .doctor-image-child {
-  top: -210px;
+  background: url("../images/background/doctor.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .recall .recall-row {
@@ -365,17 +377,19 @@ button {
   position: relative;
   height: 540px;
   overflow: hidden;
-}
-
-.preferences-background {
-  top: -125px;
+  background: url("../images/background/preferences-back.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .preferences {
   position: relative;
-  background: #005173;
+  background: #005173 url("../images/preferences/logo-shape.png");
   color: #ffffff;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 5%) calc(100% + 20%);
+  background-size: 45%;
 }
 
 .preferences-content {
@@ -631,8 +645,8 @@ button {
     transform: translate(-50%, 0%);
   }
 
-  .dark-banner {
-    object-fit: cover;
+  .top-banner {
+    background-position: 70%;
   }
 
   .text-on-banner {
@@ -660,14 +674,15 @@ button {
   }
 
   .search-top-content {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: row;
+    grid-auto-flow: row !important;
     grid-gap: 85px;
   }
 
   .search-top-content .search-top-article {
-    grid-template-rows: auto;
+    /*  grid-template-rows: auto;
+      grid-template-rows: 150px 65px 70px;*/
   }
 
   .image-how-it-was,
@@ -700,6 +715,11 @@ button {
     margin-left: 15px;
   }
 
+  .doctor-image {
+    height: 250px;
+    background-position: 50% 50%;
+  }
+
   .recall-title {
     margin: 55px 0px;
   }
@@ -722,6 +742,16 @@ button {
     font-size: 12px;
   }
 
+  .preferences {
+    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-size: 65%;
+  }
+
+  .image-preferences {
+    height: 250px;
+    background-position: 50% 50%;
+  }
+
   .preferences-content {
     display: flex;
     flex-direction: column-reverse;
@@ -737,7 +767,7 @@ button {
   }
 
   .preferences-left {
-    margin: auto;
+    margin: auto !important;
   }
 
   .preferences-list {
@@ -800,6 +830,10 @@ button {
     text-align: center;
   }
 
+  .top-banner .banner-back {
+    background-position: 70%;
+  }
+
   .top-banner .dark-banner {
     object-fit: cover;
     position: absolute;
@@ -813,6 +847,7 @@ button {
   }
 
   .search-top .search-top-content {
+    grid-template-columns: repeat(1, 1fr);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -870,6 +905,11 @@ button {
 
   .recall-row {
     grid-gap: 0px;
+  }
+
+  .preferences {
+    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-size: 65%;
   }
 
   .preferences-list {
@@ -943,11 +983,11 @@ button {
   }
 
   .search-top-content {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, 270px);
     text-align: center;
     justify-content: center;
-    grid-auto-flow: row;
+    grid-auto-flow: row !important;
   }
 
   .how-it-was-child {
@@ -968,6 +1008,11 @@ button {
     margin: 0px 35px 90px 35px;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doctor-image {
+    height: 350px;
+    background-position: 50% 50%;
   }
 
   .preferences-content {
@@ -995,6 +1040,11 @@ button {
     display: block;
     height: 100%;
     transform: translate(-25%, 0%);
+    background-position: 70%;
+  }
+
+  .top-banner {
+    background-position: 70%;
   }
 
   .text-on-banner {
@@ -1005,9 +1055,11 @@ button {
   .search-top-content {
     text-align: center;
     justify-content: center;
-    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 270px);
+    grid-auto-flow: row !important;
+    text-align: center;
     grid-gap: 85px;
-    margin: 0px 45px 130px 45px;
+    /*margin: 0px 45px 130px 45px;*/
   }
 
   .background-how-it-was {
@@ -1028,6 +1080,11 @@ button {
     text-align: left;
   }
 
+  .doctor-image {
+    height: 250px !important;
+    background-position: 50% 50%;
+  }
+
   .recall-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1038,10 +1095,6 @@ button {
     position: relative;
     width: 100%;
     color: #0b2a37;
-  }
-
-  .doctor-image .doctor-image-child {
-    top: -135px;
   }
 
   .chat-icon {
@@ -1060,6 +1113,20 @@ button {
     right: 0;
     width: 275px;
     margin: 4px 25px;
+  }
+
+  .preferences {
+    background-position: calc(100% + 15%) calc(100% + 15%);
+    background-size: 55%;
+  }
+
+  .preferences .preferences-left {
+    margin-left: 20px;
+  }
+
+  .image-preferences {
+    height: 350px;
+    background-position: 50% 50%;
   }
 
   .preferences-content {
