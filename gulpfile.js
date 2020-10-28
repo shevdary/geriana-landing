@@ -9,10 +9,7 @@ let path = {
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-    css: [
-      source_folder + "/css/*.{css, scss}",
-      "!" + source_folder + "/_*.{css, scss}"
-    ],
+    css: [source_folder + "/css/*.{css, scss}", "!" + source_folder + "/_*.{css, scss}"],
     img: source_folder + "/images/**/*.{jpg,ico,png,svg}"
   },
   watch: {

@@ -1,9 +1,10 @@
+$chat-color: #eff7f7;
 .recall {
   .doctor-image {
     position: relative;
     height: 540px;
     overflow: hidden;
-    background:url("../images/background/doctor.jpg");
+    background: url("../images/background/doctor.jpg");
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -32,15 +33,30 @@
 
   }
 
-  .chat-text {
-    top: 0;
-    margin: 40px 20px;
+  .chat-parent {
+    width: 100%;
+    background: $chat-color;
+
+    .chat-child-text {
+      padding: 30px 15px;
+      top: 0;
+      margin: 0;
+    }
+  }
+
+  .chat-parent:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    border: 10px solid transparent;
+    border-top: 10px solid $chat-color;
+    border-right: 10px solid $chat-color;
   }
 
   .chat-person {
     display: flex;
     text-align: end;
-    margin-bottom: 20px;
+    margin: 20px 0px;
   }
 
   .chat-person-section {
@@ -48,16 +64,12 @@
   }
 }
 
-@media screen and (max-width: 1244px) {
+@media screen and (max-width: 1288px) {
   .col-1, .col-2, .col-3 {
     width: 100% !important;
   }
-  .recall .chat-text {
-    top: 0;
-    margin: 25px 20px;
-  }
   .recall .recall-row {
-    margin-right: 25px;
+    margin: 0px 15px 150px 15px;
   }
   .grid-3-col {
     display: grid;
@@ -69,25 +81,27 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1223px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .recall-row {
     margin: 0px 35px 90px 35px;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
-  .doctor-image{
-    height:350px ;
+  .doctor-image {
+    height: 350px;
     background-position: 50% 50%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .doctor-image {
-    height:250px !important;
+    height: 250px !important;
     background-position: 50% 50%;
   }
   .recall-row {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px !important;
+    margin-right: 0;
   }
   .recall .col-1, .col-2, .col-3 {
     position: relative;
@@ -99,7 +113,8 @@
     float: right;
     width: 340px;
   }
-  .chat-text {
+  .chat-child-text {
+
     top: 0;
     margin: 10px 13px;
   }
@@ -115,7 +130,7 @@
 
 @media (max-width: 767px) {
   .doctor-image {
-    height:250px ;
+    height: 250px;
     background-position: 50% 50%;
   }
   .recall-title {
@@ -133,8 +148,7 @@
     color: #0b2a37;
   }
 
-  .chat-text {
-    margin: 25px 20px !important;
+  .chat-child-text {
     font-size: 12px;
   }
 }
