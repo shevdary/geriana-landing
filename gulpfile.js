@@ -9,7 +9,10 @@ let path = {
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-    css: [source_folder + "/css/*.{css, scss}", "!" + source_folder + "/_*.{css, scss}"],
+    css: [
+      source_folder + "/css/*.{css, scss}",
+      "!" + source_folder + "/_*.{css, scss}"
+    ],
     img: source_folder + "/images/**/*.{jpg,ico,png,svg}"
   },
   watch: {
@@ -29,7 +32,7 @@ const { src, dest } = require("gulp"),
   gulp_autoprefixer = require("gulp-autoprefixer"),
   scss = require("gulp-sass"),
   group_media = require("gulp-group-css-media-queries"),
-    ghPages = require('gh-pages');
+  ghPages = require("gh-pages");
 
 function browcerSync(param) {
   console.log(path.watch.html);
@@ -48,9 +51,11 @@ function watchFiles(params) {
 function clean(params) {
   return del(path.clean);
 }
+
 function deploy(cb) {
-    ghPages.publish((project_folder), cb);
+  ghPages.publish(project_folder, cb);
 }
+
 function html() {
   return src(path.src.html)
     .pipe(fileinclude())

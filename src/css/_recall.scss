@@ -144,16 +144,17 @@ $chat-color: #eff7f7;
 
   .recall .col-1, .col-2, .col-3 {
     position: relative;
-    width: 100% !important;
+    width: 75% !important;
     color: #0b2a37;
-  }
-
-  .chat-child-text {
-    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
+  .recall .col-1, .col-2, .col-3 {
+    position: relative;
+    width: 90% !important;
+    color: #0b2a37;
+  }
   .recall-row {
     grid-gap: 0px;
   }

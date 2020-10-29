@@ -95,15 +95,15 @@
   }
 }
 
-@media screen and (max-width: 1244px) {
+@media (min-width: 1224px) and (max-width: 1380px) {
   .how-it-was {
     .how-it-was-article {
       padding: 0px;
-      flex-direction: column;
 
       .steps-title {
-        width: 100%;
-        padding: 50px 0px;
+        width: 50%;
+        padding: 50px 0px 50px 10px;
+        margin-right: 0;
       }
     }
 
@@ -111,13 +111,12 @@
       margin-right: 125px;
     }
 
-    .steps {
-      align-self: flex-end;
 
-      .right-line {
-        right: 25px !important;
-      }
+    .right-line {
+      right: -20% !important;
+
     }
+
   }
 }
 
@@ -190,15 +189,13 @@
 @media (max-width: 480px) {
   .how-it-was {
     .how-it-was-article {
+      padding-left: 0;
+      padding-right: 0;
       display: block;
       flex-direction: column;
 
       .float-left, .float-right {
         width: auto !important;
-
-        .steps-b {
-          border-bottom: #ffffff 2px solid;
-        }
       }
     }
   }
@@ -220,10 +217,17 @@
     flex-direction: column;
     padding-bottom: 75px;
   }
-  .step-one {
+  .step-one, .step-three {
     margin-left: 0px;
     display: flex;
 
+  }
+  .icon-right, .icon-left{
+    height: fit-content;
+  }
+  .step-two, .step-four{
+    display: flex;
+    text-align: start !important;
   }
   .step-content-left {
     margin-left: 0 !important;
@@ -233,9 +237,6 @@
   }
   .step-left {
     margin: 10px !important;
-  }
-  .icon-right, .icon-left {
-    display: none;
   }
   .steps-title-h1 {
     margin-left: 0px !important;
