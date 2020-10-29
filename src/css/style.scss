@@ -11,7 +11,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 80px;
   z-index: 1000;
   margin: auto;
 }
@@ -102,9 +102,7 @@ button {
   .background-how-it-was, .recall .doctor-image, .image-preferences {
     height: 750px;
   }
-  .nav-link {
-    margin: 20px auto;
-  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1223px) {
@@ -140,6 +138,7 @@ button {
 }
 
 @import "_header.scss";
+@import "scroll-header.scss";
 @import "_banner.scss";
 @import "_search-top.scss";
 @import "_how-it-was.scss";

@@ -24,5 +24,15 @@
     </selection>
     @@include('_footer.html')
 </main>
+<script>
+    function toggleScrollClass() {
+        const scroll = document.querySelector('header');
+
+        window.pageYOffset > 0 ? scroll.classList.add('scroll') : scroll.classList.remove('scroll');
+    }
+
+    window.addEventListener('scroll', function () {toggleScrollClass()});
+    toggleScrollClass();
+</script>
 </body>
 </html>

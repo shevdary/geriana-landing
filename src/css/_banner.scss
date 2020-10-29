@@ -1,3 +1,13 @@
+.call-us-button-scroll {
+  display: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+
+}
 
 .top-banner {
   background-image: url("../images/top-banner/top-banner.jpg");
@@ -28,7 +38,7 @@
       margin: 45px 0px 45px 0px;
     }
 
-    button {
+    .banner-button {
       font-size: 18px;
       color: #ffffff;
       background-color: #ff5151;
@@ -125,12 +135,11 @@
 }
 
 @media (max-width: 480px) {
+  .banner-back {
+    background-position: 70%;
+  }
   .top-banner {
     text-align: center;
-
-    .banner-back {
-      background-position: 70%;
-    }
 
     .dark-banner {
       object-fit: cover;
