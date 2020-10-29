@@ -11,7 +11,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 80px;
   z-index: 1000;
   margin: auto;
 }
@@ -97,9 +97,50 @@ button {
   margin-bottom: 50px;
 }
 
+.scroll {
+  position: fixed;
+  transition: 0.5s;
+  background-color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  color: #196281;
+}
+
+.scroll .nav-link-left .second-logo {
+  display: inline-block !important;
+}
+
+.scroll .nav-link-left .first-logo,
+.scroll .nav-link-left .call-us-button {
+  display: none;
+}
+
+.scroll .nav-link-left .call-us-button {
+  display: none;
+}
+
+.scroll .nav-link-left .call-us-scroll {
+  display: block !important;
+}
+
+.scroll .nav-link-left button {
+  border: #196281 2px solid;
+  color: #196281 !important;
+}
+
+.scroll .nav-link-right li,
+.scroll .nav-link-right a {
+  color: #196281 !important;
+}
+
+.scroll .nav-link-right .nav-link-li div,
+.scroll .nav-link-right div:after,
+.scroll .nav-link-right div:before {
+  background-color: #196281 !important;
+}
+
 .nav-link {
-  margin-top: 20px;
-  margin-left: 30px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 .nav-link .nav-link-left .nav-link-button {
@@ -125,6 +166,10 @@ button {
   width: 100px;
 }
 
+.nav-link .nav-link-left .second-logo {
+  display: none;
+}
+
 .nav-link .nav-link-right .nav-link-li {
   color: #ffffff;
   margin-right: 35px;
@@ -147,6 +192,151 @@ button {
 
 .nav-link .nav-link-right .hamburger-menu-icon {
   margin-right: 10px;
+}
+
+.nav-link .nav-link-right li:nth-child(3) {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+}
+
+.nav-link .nav-link-li div {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 45%;
+  transform: translate(-125%);
+}
+
+.nav-link .nav-link-li div:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  top: -8px;
+  left: 0;
+}
+
+.nav-link .nav-link-li div:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  top: 8px;
+  left: 0;
+}
+
+.scroll-header {
+  display: none;
+  transition: 0.3s ease-in-out;
+  position: fixed;
+  padding-top: 20px;
+  padding-left: 25px;
+  background: #ffffff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.scroll-header .nav-link-left {
+  display: flex;
+}
+
+.scroll-header .nav-link-left .nav-link-button {
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  color: #196281;
+}
+
+.scroll-header .nav-link-left .call-button {
+  margin-left: 30px;
+  align-self: flex-end;
+  font-weight: 900;
+  padding: 0px 15px;
+  border: #196281 2px solid;
+}
+
+.scroll-header .nav-link-right li:nth-child(3) {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+}
+
+.scroll-header .nav-link-li div {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #0b2a37;
+  left: 0;
+  bottom: 45%;
+  transform: translate(-125%);
+}
+
+.scroll-header .nav-link-li div:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0b2a37;
+  top: -8px;
+  left: 0;
+}
+
+.scroll-header .nav-link-li div:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #0b2a37;
+  top: 8px;
+  left: 0;
+}
+
+.scroll-header .nav-link-right .nav-link-li {
+  color: #0b2a37;
+  margin-right: 35px;
+  display: inline-block;
+}
+
+.scroll-header .nav-link-right .nav-link-li .nav-link-a {
+  text-decoration: none;
+  color: #0b2a37;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.scroll-header .nav-link-right .nav-link-li .nav-link-a:hover {
+  background-size: 100% 2px;
+}
+
+.scroll-header .nav-link-right .hamburger-menu-icon {
+  margin-right: 10px;
+}
+
+.call-us-scroll {
+  display: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.call-us-scroll .visible {
+  display: block !important;
 }
 
 .top-banner {
@@ -180,7 +370,7 @@ button {
   margin: 45px 0px 45px 0px;
 }
 
-.top-banner .text-on-banner button {
+.top-banner .text-on-banner .banner-button {
   font-size: 18px;
   color: #ffffff;
   background-color: #ff5151;
@@ -233,21 +423,21 @@ button {
   margin: 0px;
 }
 
-.background-how-it-was {
+.how-it-was {
+  background-color: #66cfcf;
+  color: #ffffff;
+}
+
+.how-it-was .background-how-it-was {
   height: 570px;
   overflow: hidden;
   background: url("../images/background/help.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 40%;
 }
 
-.background-how-it-was .how-it-was-child {
-  top: -120px;
-}
-
-.how-it-was {
-  background-color: #66cfcf;
-  color: #ffffff;
+.how-it-was .steps-b {
+  display: block;
 }
 
 .how-it-was .how-it-was-article {
@@ -260,7 +450,6 @@ button {
   font-weight: 900;
   font-size: 80px;
   width: 45%;
-  margin-right: 60px;
 }
 
 .how-it-was .how-it-was-article .steps-title .steps-title-h1 {
@@ -276,9 +465,23 @@ button {
 }
 
 .how-it-was .how-it-was-article .steps {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 550px;
+  margin-left: 5%;
+}
+
+.how-it-was .how-it-was-article .steps .step-one,
+.how-it-was .how-it-was-article .steps .step-three {
+  display: flex;
+  width: 100%;
+}
+
+.how-it-was .how-it-was-article .steps .step-one .icon-left,
+.how-it-was .how-it-was-article .steps .step-three .icon-left {
+  height: fit-content;
 }
 
 .how-it-was .how-it-was-article .steps .step-two {
@@ -295,6 +498,7 @@ button {
 }
 
 .how-it-was .how-it-was-article .steps .step-content-left {
+  align-self: center;
   margin-left: 115px;
 }
 
@@ -303,26 +507,36 @@ button {
 }
 
 .how-it-was .how-it-was-article .steps .step-right {
-  width: 45%;
   margin: 10px 0px 0px 10px;
 }
 
 .how-it-was .how-it-was-article .steps .step-left {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 10px 15px 0px 0px;
 }
 
 .how-it-was .how-it-was-article .steps .right-line {
+  width: 45%;
   position: absolute !important;
-  right: -125px;
-  margin-top: 20px;
+  left: 70%;
+  margin-top: 45px;
 }
 
 .how-it-was .how-it-was-article .steps .left-line {
   position: absolute !important;
-  left: 0;
-  margin-top: 20px;
+  width: 50%;
+  right: 85%;
+  margin-top: 45px;
+}
+
+.how-it-was .how-it-was-article .steps .float-left p {
+  display: inline-block;
+}
+
+.how-it-was .how-it-was-article .steps .icon-left,
+.how-it-was .how-it-was-article .steps .icon-right {
+  margin: 0px 5px;
 }
 
 .recall .doctor-image {
@@ -334,18 +548,6 @@ button {
   background-position: 50% 50%;
 }
 
-.recall .recall-row {
-  place-items: center;
-  margin-bottom: 195px;
-}
-
-.recall .col-1,
-.recall .col-2,
-.recall .col-3 {
-  width: 410px;
-  color: #0b2a37;
-}
-
 .recall .recall-title {
   font-weight: 900;
   font-size: 36px;
@@ -353,23 +555,47 @@ button {
   margin: 100px 0px 120px 0px;
 }
 
-.recall .recall-title .recall-row {
-  margin: 0px 35px 90px 35px;
+.recall .recall-row {
+  margin: 0px 35px 0px 35px;
   grid-gap: 65px;
+  place-items: center;
+  margin-bottom: 195px;
 }
 
-.recall .chat-text {
+.recall .recall-row .col-1,
+.recall .recall-row .col-2,
+.recall .recall-row .col-3 {
+  width: 410px;
+  color: #0b2a37;
+}
+
+.recall .chat-parent {
+  width: 100%;
+  background: #eff7f7;
+}
+
+.recall .chat-parent .chat-child-text {
+  padding: 30px 15px;
   top: 0;
-  margin: 40px 20px;
+  margin: 0;
+}
+
+.recall .chat-parent:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  border: 10px solid transparent;
+  border-top: 10px solid #eff7f7;
+  border-right: 10px solid #eff7f7;
 }
 
 .recall .chat-person {
   display: flex;
   text-align: end;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
-.recall .chat-person-section {
+.recall .chat-person .chat-person-section {
   margin: auto 10px;
 }
 
@@ -552,54 +778,17 @@ button {
   .image-preferences {
     height: 750px;
   }
-
-  .nav-link {
-    margin: 20px auto;
-  }
 }
 
-@media screen and (max-width: 1244px) {
-  .how-it-was .how-it-was-article {
-    padding: 0px;
-    flex-direction: column;
-  }
-
-  .how-it-was .how-it-was-article .steps-title {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .how-it-was .how-it-was-article .steps-title .steps-title-h1,
-  .how-it-was .how-it-was-article .steps-title .steps-title-button {
-    margin-left: 45px;
-  }
-
-  .how-it-was .icon-right {
-    margin-right: 125px;
-  }
-
-  .how-it-was .steps {
-    width: 55% !important;
-    align-self: flex-end;
-  }
-
-  .how-it-was .steps .right-line {
-    right: 25px !important;
-  }
-
+@media screen and (max-width: 1288px) {
   .col-1,
   .col-2,
   .col-3 {
     width: 100% !important;
   }
 
-  .recall .chat-text {
-    top: 0;
-    margin: 25px 20px;
-  }
-
   .recall .recall-row {
-    margin-right: 25px;
+    margin: 0px 15px 150px 15px;
   }
 
   .grid-3-col {
@@ -632,7 +821,24 @@ button {
     display: inline-block;
   }
 
+  .nav-link-button,
+  .sign-up,
+  .sign-in {
+    display: none !important;
+  }
+
   .nav-link {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .nav-link-left,
+  .nav-link-right {
+    display: inline-block;
+  }
+
+  .nav-link-scroll {
     display: flex;
     overflow: auto;
     white-space: nowrap;
@@ -680,14 +886,8 @@ button {
     grid-gap: 85px;
   }
 
-  .search-top-content .search-top-article {
-    /*  grid-template-rows: auto;
-      grid-template-rows: 150px 65px 70px;*/
-  }
-
-  .image-how-it-was,
-  .doctor-image {
-    height: 460px;
+  .background-how-it-was {
+    display: none;
   }
 
   .how-it-was-child {
@@ -696,7 +896,7 @@ button {
 
   .how-it-was .how-it-was-article {
     display: block;
-    padding: 50px 40px 60px 0px;
+    padding: 105px 0px 60px 0px;
   }
 
   .how-it-was .how-it-was-article .steps-title {
@@ -715,9 +915,26 @@ button {
     margin-left: 15px;
   }
 
-  .doctor-image {
-    height: 250px;
-    background-position: 50% 50%;
+  .step-one,
+  .step-three {
+    width: auto !important;
+  }
+
+  .step-two,
+  .step-four {
+    margin-right: 25px;
+  }
+
+  .how-it-was .how-it-was-article .steps .step-content-left {
+    align-self: start;
+    margin-left: 20px;
+  }
+
+  .how-it-was .how-it-was-article .steps {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
 
   .recall-title {
@@ -733,13 +950,8 @@ button {
   .col-2,
   .col-3 {
     position: relative;
-    width: 100% !important;
+    width: 75% !important;
     color: #0b2a37;
-  }
-
-  .chat-text {
-    margin: 25px 20px !important;
-    font-size: 12px;
   }
 
   .preferences {
@@ -815,23 +1027,44 @@ button {
     display: none;
   }
 
-  .nav-link-left,
-  .nav-link-right {
-    display: inline-block;
-  }
-
   .nav-link {
     display: flex;
     overflow: auto;
     white-space: nowrap;
   }
 
-  .top-banner {
-    text-align: center;
+  .nav-link .nav-link-left .nav-link-button,
+  .nav-link .nav-link-left .call-us-button {
+    display: none;
   }
 
-  .top-banner .banner-back {
+  .nav-link .nav-link-li div {
+    top: -275%;
+    transform: translate(90%);
+  }
+
+  .nav-link-left,
+  .nav-link-right {
+    display: inline-block;
+  }
+
+  .nav-link-left,
+  .nav-link-right {
+    display: inline-block;
+  }
+
+  .nav-link-scroll {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .banner-back {
     background-position: 70%;
+  }
+
+  .top-banner {
+    text-align: center;
   }
 
   .top-banner .dark-banner {
@@ -846,6 +1079,10 @@ button {
     transform: translate(-50%, 0%);
   }
 
+  .search-top-article {
+    grid-template-rows: 60% 25% 5% !important;
+  }
+
   .search-top .search-top-content {
     grid-template-columns: repeat(1, 1fr);
     display: flex;
@@ -858,9 +1095,15 @@ button {
   }
 
   .how-it-was .how-it-was-article {
+    padding-left: 0;
+    padding-right: 0;
     display: block;
     flex-direction: column;
-    padding: 45px 10px !important;
+  }
+
+  .how-it-was .how-it-was-article .float-left,
+  .how-it-was .how-it-was-article .float-right {
+    width: auto !important;
   }
 
   .steps-title {
@@ -882,11 +1125,25 @@ button {
     display: flex;
     width: 100% !important;
     flex-direction: column;
+    padding-bottom: 75px;
   }
 
-  .step-one {
+  .step-one,
+  .step-three {
     margin-left: 0px;
     display: flex;
+  }
+
+  .icon-right,
+  .icon-left {
+    height: fit-content;
+  }
+
+  .step-two,
+  .step-four {
+    place-self: auto !important;
+    display: flex;
+    text-align: start !important;
   }
 
   .step-content-left {
@@ -894,13 +1151,23 @@ button {
   }
 
   .step-right {
-    width: 50%;
-    margin: 0px 10px 10px;
+    margin: 10px !important;
   }
 
-  .icon-right,
-  .icon-left {
-    display: none;
+  .step-left {
+    margin: 10px !important;
+  }
+
+  .steps-title-h1 {
+    margin-left: 0px !important;
+  }
+
+  .recall .col-1,
+  .col-2,
+  .col-3 {
+    position: relative;
+    width: 90% !important;
+    color: #0b2a37;
   }
 
   .recall-row {
@@ -990,31 +1257,6 @@ button {
     grid-auto-flow: row !important;
   }
 
-  .how-it-was-child {
-    top: -55px;
-  }
-
-  .steps-title {
-    display: block;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .steps {
-    margin-right: 215px;
-  }
-
-  .recall-row {
-    margin: 0px 35px 90px 35px;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .doctor-image {
-    height: 350px;
-    background-position: 50% 50%;
-  }
-
   .preferences-content {
     margin: 50px 0px;
   }
@@ -1024,6 +1266,15 @@ button {
   .image-how-it-was,
   .doctor-image {
     height: 460px;
+  }
+
+  .nav-link-left,
+  .nav-link-right {
+    display: inline-block;
+  }
+
+  .nav-link-left button {
+    display: none !important;
   }
 
   .nav-link-left,
@@ -1053,66 +1304,12 @@ button {
   }
 
   .search-top-content {
+    display: grid !important;
     text-align: center;
     justify-content: center;
     grid-template-columns: repeat(2, 270px);
     grid-auto-flow: row !important;
-    text-align: center;
     grid-gap: 85px;
-    /*margin: 0px 45px 130px 45px;*/
-  }
-
-  .background-how-it-was {
-    height: 350px;
-  }
-
-  .how-it-was-child {
-    top: -55px;
-  }
-
-  .steps-title {
-    display: block;
-    text-align: center;
-    margin-bottom: 55px;
-  }
-
-  .steps-title-h1 {
-    text-align: left;
-  }
-
-  .doctor-image {
-    height: 250px !important;
-    background-position: 50% 50%;
-  }
-
-  .recall-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .recall .col-1,
-  .col-2,
-  .col-3 {
-    position: relative;
-    width: 100%;
-    color: #0b2a37;
-  }
-
-  .chat-icon {
-    float: right;
-    width: 340px;
-  }
-
-  .chat-text {
-    top: 0;
-    margin: 10px 13px;
-  }
-
-  .chat-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 275px;
-    margin: 4px 25px;
   }
 
   .preferences {
@@ -1139,5 +1336,155 @@ button {
     list-style-type: none;
     margin-left: 0;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1224px) and (max-width: 1320px) {
+  .how-it-was .how-it-was-article {
+    padding: 0px;
+    flex-direction: row-reverse;
+  }
+
+  .how-it-was .how-it-was-article .steps-title {
+    width: 50%;
+    padding: 50px 0px 50px 10px;
+    text-align: center;
+    font-size: 64px;
+    margin: auto;
+  }
+
+  .how-it-was .icon-right {
+    margin-right: 125px;
+  }
+
+  .how-it-was .right-line {
+    right: -20% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1224px) {
+  .how-it-was .how-it-was-article {
+    flex-direction: row-reverse;
+    padding: 105px 0px 60px 0px;
+  }
+
+  .how-it-was .how-it-was-article .steps-title {
+    display: block;
+    text-align: center;
+    font-size: 64px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .how-it-was .how-it-was-article .steps {
+    margin-left: 0 !important;
+    margin-right: 215px;
+  }
+
+  .how-it-was .how-it-was-article .right-line,
+  .how-it-was .how-it-was-article .left-line {
+    display: none;
+  }
+
+  .how-it-was .how-it-was-article .float-left {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .background-how-it-was {
+    height: 270px;
+    background-position: 50% 30%;
+  }
+
+  .steps-title-h1 {
+    font-size: 64px;
+  }
+
+  .right-line,
+  .left-line {
+    display: none;
+  }
+
+  .how-it-was .how-it-was-article {
+    flex-direction: column;
+    padding: 105px 0px 60px 0px;
+  }
+
+  .how-it-was .how-it-was-article .steps-title {
+    margin-left: 20px;
+  }
+
+  .how-it-was .how-it-was-article .step-content-left {
+    margin-left: 0;
+  }
+
+  .how-it-was .how-it-was-article .steps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .how-it-was .how-it-was-article .float-left {
+    text-align: justify;
+  }
+
+  .how-it-was-child {
+    top: -55px;
+  }
+
+  .steps-title {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .doctor-image {
+    height: 270px !important;
+    background-position: 50% 50%;
+  }
+
+  .recall-row {
+    margin: 0px 35px 90px 35px;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recall .col-1,
+  .col-2,
+  .col-3 {
+    position: relative;
+    width: 100%;
+    color: #0b2a37;
+  }
+
+  .chat-icon {
+    float: right;
+    width: 340px;
+  }
+
+  .chat-child-text {
+    top: 0;
+    margin: 10px 13px;
+  }
+
+  .chat-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 275px;
+    margin: 4px 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .recall-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px !important;
+    margin-right: 0;
+  }
+
+  .doctor-image {
+    height: 350px;
+    background-position: 50% 50%;
   }
 }
