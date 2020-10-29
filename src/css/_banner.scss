@@ -1,4 +1,4 @@
-.call-us-button-scroll {
+.call-us-scroll {
   display: none;
   color: #ffffff;
   padding: 5px 15px;
@@ -6,8 +6,13 @@
   position: absolute;
   bottom: 100px;
   right: 0;
+  margin-right: 20px;
 
+  .visible {
+    display: block !important;
+  }
 }
+
 
 .top-banner {
   background-image: url("../images/top-banner/top-banner.jpg");

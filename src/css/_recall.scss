@@ -9,28 +9,24 @@ $chat-color: #eff7f7;
     background-position: 50% 50%;
   }
 
-  .recall-row {
-    place-items: center;
-    margin-bottom: 195px;
-  }
-
-  .col-1, .col-2, .col-3 {
-    width: 410px;
-    color: #0b2a37;
-  }
-
   .recall-title {
     font-weight: 900;
     font-size: 36px;
     color: #0b2a37;
     margin: 100px 0px 120px 0px;
+  }
 
-    .recall-row {
+  .recall-row {
+    margin: 0px 35px 0px 35px;
+    grid-gap: 65px;
+    place-items: center;
+    margin-bottom: 195px;
 
-      margin: 0px 35px 90px 35px;
-      grid-gap: 65px;
+    .col-1, .col-2, .col-3 {
+      width: 410px;
+      color: #0b2a37;
+
     }
-
   }
 
   .chat-parent {
@@ -57,10 +53,10 @@ $chat-color: #eff7f7;
     display: flex;
     text-align: end;
     margin: 20px 0px;
-  }
 
-  .chat-person-section {
-    margin: auto 10px;
+    .chat-person-section {
+      margin: auto 10px;
+    }
   }
 }
 
@@ -83,9 +79,9 @@ $chat-color: #eff7f7;
 
 @media (min-width: 992px) and (max-width: 1279px) {
   .recall-row {
-    margin: 0px 35px 90px 35px;
-    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px !important;
+    margin-right: 0;
   }
   .doctor-image {
     height: 350px;
@@ -93,15 +89,16 @@ $chat-color: #eff7f7;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .doctor-image {
-    height: 250px !important;
+    height: 270px !important;
     background-position: 50% 50%;
   }
+
   .recall-row {
+    margin: 0px 35px 90px 35px;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 45px !important;
-    margin-right: 0;
   }
   .recall .col-1, .col-2, .col-3 {
     position: relative;
@@ -129,10 +126,6 @@ $chat-color: #eff7f7;
 }
 
 @media (max-width: 767px) {
-  .doctor-image {
-    height: 250px;
-    background-position: 50% 50%;
-  }
   .recall-title {
     margin: 55px 0px;
   }

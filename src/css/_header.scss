@@ -4,37 +4,48 @@
   background-color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   color: #196281;
-  .second-logo{
-  display: inline-block !important;
-  }
-  .first-logo{
-    display: none;
-  }
-  .call-us-button {
-    display: none;
-  }
-  button {
-    border: #196281 2px solid;
-    color: #196281 !important;
 
+  .nav-link-left {
+    .second-logo {
+      display: inline-block !important;
+    }
+
+    .first-logo, .call-us-button {
+      display: none;
+    }
+
+    .call-us-button {
+      display: none;
+    }
+
+    .call-us-scroll {
+      display: block !important;
+    }
+
+    button {
+      border: #196281 2px solid;
+      color: #196281 !important;
+
+    }
   }
-  li, a {
-    color: #196281 !important;
+
+  .nav-link-right {
+    li, a {
+      color: #196281 !important;
+    }
+
+
+    .nav-link-li div, div:after, div:before {
+      background-color: #196281 !important;
+    }
   }
 
 
-  .nav-link-li div, div:after, div:before {
-    background-color: #196281 !important;
-  }
 }
 
 .nav-link {
   padding-top: 20px;
   padding-left: 30px;
-
-  .second-logo{
-    display: none;
-  }
 
   .nav-link-left {
     .nav-link-button {
@@ -58,6 +69,10 @@
 
     .call-us-button {
       width: 100px;
+    }
+
+    .second-logo {
+      display: none;
     }
   }
 
@@ -83,7 +98,6 @@
     }
 
     .hamburger-menu-icon {
-
       margin-right: 10px;
     }
   }
@@ -134,7 +148,7 @@
     display: inline-block;
   }
   .nav-link-left button {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -142,7 +156,9 @@
   .nav-link-left, .nav-link-right {
     display: inline-block;
   }
-
+  .nav-link-button, .sign-up, .sign-in {
+    display: none !important;
+  }
   .nav-link {
     display: flex;
     overflow: auto;
@@ -151,20 +167,23 @@
 }
 
 @media (max-width: 480px) {
-  .nav-link-button, .call-us-button{
-    display: none;
-  }
-  .nav-link .nav-link-li div{
-    top: -275%;
-    transform: translate(90%);
-  }
-  .nav-link-left, .nav-link-right {
-    display: inline-block;
-  }
-
   .nav-link {
     display: flex;
     overflow: auto;
     white-space: nowrap;
+
+    .nav-link-left {
+      .nav-link-button, .call-us-button {
+        display: none;
+      }
+    }
+
+    .nav-link-li div {
+      top: -275%;
+      transform: translate(90%);
+    }
+  }
+  .nav-link-left, .nav-link-right {
+    display: inline-block;
   }
 }
