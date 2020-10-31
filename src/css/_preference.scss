@@ -14,7 +14,7 @@
   color: #ffffff;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: calc(100% + 5%) calc(100% + 20%);
+  background-position: 105% 120%;
   background-size: 45%;
 }
 
@@ -89,7 +89,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .preferences {
-    background-position: calc(100% + 15%) calc(100% + 15%);
+    background-position:115% 115%;
     background-size: 55%;
 
     .preferences-left {
@@ -115,7 +115,7 @@
 
 @media (max-width: 767px) {
   .preferences {
-    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-position: 125% 105%;
     background-size: 65%;
   }
   .image-preferences {
@@ -152,7 +152,7 @@
 
 @media (max-width: 480px) {
   .preferences {
-    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-position: 125% 105%;
     background-size: 65%;
   }
   .preferences-list {
