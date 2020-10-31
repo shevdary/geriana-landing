@@ -476,7 +476,8 @@ button {
 .how-it-was .how-it-was-article .steps .step-one,
 .how-it-was .how-it-was-article .steps .step-three {
   display: flex;
-  width: 100%;
+  width: 60%;
+  align-self: end;
 }
 
 .how-it-was .how-it-was-article .steps .step-one .icon-left,
@@ -485,20 +486,32 @@ button {
 }
 
 .how-it-was .how-it-was-article .steps .step-two {
+  width: 50%;
   margin-bottom: 25px !important;
   right: 0px;
-  place-self: flex-end;
+  place-self: center;
   text-align: end;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .how-it-was .how-it-was-article .steps .step-four {
+  width: 50%;
   right: 0px;
-  place-self: flex-end;
+  place-self: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.how-it-was .how-it-was-article .steps .step-four img {
+  height: fit-content;
+}
+
+.how-it-was .how-it-was-article .steps .step-four p {
   text-align: end;
 }
 
 .how-it-was .how-it-was-article .steps .step-content-left {
-  align-self: center;
   margin-left: 115px;
 }
 
@@ -519,25 +532,51 @@ button {
 .how-it-was .how-it-was-article .steps .right-line {
   width: 45%;
   position: absolute !important;
-  left: 70%;
+  left: 75%;
   margin-top: 45px;
 }
 
 .how-it-was .how-it-was-article .steps .left-line {
   position: absolute !important;
   width: 50%;
-  right: 85%;
+  right: 90%;
   margin-top: 45px;
 }
 
 .how-it-was .how-it-was-article .steps .float-left p {
   display: inline-block;
+  width: 70%;
 }
 
 .how-it-was .how-it-was-article .steps .icon-left,
 .how-it-was .how-it-was-article .steps .icon-right {
-  margin: 0px 5px;
+  margin: 20px 10px;
 }
+
+/*@media (min-width: 1224px) and (max-width: 1320px) {
+  .how-it-was {
+    .how-it-was-article {
+      padding: 0px;
+      flex-direction: row-reverse;
+
+      .steps-title {
+        width: 50%;
+        padding: 50px 0px 50px 10px;
+        text-align: center;
+        font-size: 64px;
+        margin: auto;
+      }
+    }
+
+    .icon-right {
+      margin-right: 125px;
+    }
+
+    .right-line {
+      right: -20% !important;
+    }
+  }
+}*/
 
 .recall .doctor-image {
   position: relative;
@@ -780,7 +819,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1288px) {
+@media screen and (max-width: 1410px) {
   .col-1,
   .col-2,
   .col-3 {
@@ -890,20 +929,99 @@ button {
     display: none;
   }
 
-  .how-it-was-child {
-    top: -55px;
+  .step-content-left {
+    align-self: center !important;
+  }
+
+  .steps {
+    background: #ffffff;
+    position: relative;
+  }
+
+  .steps .step-one,
+  .steps .step-two,
+  .steps .step-three,
+  .steps .step-four {
+    margin-bottom: 0;
+    width: 75% !important;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .steps .step-one img,
+  .steps .step-two img,
+  .steps .step-three img,
+  .steps .step-four img {
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px black;
+    position: absolute;
+    background: #66cfcf;
+    left: 50px;
+    width: fit-content;
+    transform: translate(-125%, 0%);
+  }
+
+  .steps .step-one .float-left,
+  .steps .step-two .float-left,
+  .steps .step-three .float-left,
+  .steps .step-four .float-left {
+    margin: 0;
+  }
+
+  .steps .step-one .step-left,
+  .steps .step-two .step-left,
+  .steps .step-three .step-left,
+  .steps .step-four .step-left {
+    margin: 0 !important;
+  }
+
+  .steps .step-one p,
+  .steps .step-two p,
+  .steps .step-three p,
+  .steps .step-four p {
+    display: block !important;
+    width: auto !important;
+    right: 50%;
+    background: #66cfcf;
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+
+  .steps .step-two,
+  .steps .step-four {
+    place-self: center !important;
+  }
+
+  .steps .step-two img,
+  .steps .step-four img {
+    bottom: 0;
+    top: 0;
+    margin: auto !important;
+    transform: translate(-115%, 0) !important;
+  }
+
+  .steps .step-two p,
+  .steps .step-four p {
+    text-align: start !important;
+  }
+
+  .how-it-was .how-it-was-article .steps .step-two {
+    margin-bottom: 0 !important;
   }
 
   .how-it-was .how-it-was-article {
     display: block;
-    padding: 105px 0px 60px 0px;
+    padding: 105px 0px 0px 0px;
   }
 
   .how-it-was .how-it-was-article .steps-title {
     display: block;
     width: 100% !important;
     text-align: center !important;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 
   .steps-title-h1 {
@@ -918,16 +1036,7 @@ button {
   .step-one,
   .step-three {
     width: auto !important;
-  }
-
-  .step-two,
-  .step-four {
-    margin-right: 25px;
-  }
-
-  .how-it-was .how-it-was-article .steps .step-content-left {
-    align-self: start;
-    margin-left: 20px;
+    margin-left: 0 !important;
   }
 
   .how-it-was .how-it-was-article .steps {
@@ -935,6 +1044,12 @@ button {
     display: flex;
     flex-direction: column;
     width: auto;
+  }
+
+  .step-right,
+  .step-left {
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   .recall-title {
@@ -1101,9 +1216,37 @@ button {
     flex-direction: column;
   }
 
-  .how-it-was .how-it-was-article .float-left,
-  .how-it-was .how-it-was-article .float-right {
-    width: auto !important;
+  .how-it-was .steps .step-one,
+  .how-it-was .steps .step-three,
+  .how-it-was .steps .step-two,
+  .how-it-was .steps .step-four {
+    margin-top: 45px;
+  }
+
+  .how-it-was .steps .step-one img,
+  .how-it-was .steps .step-three img,
+  .how-it-was .steps .step-two img,
+  .how-it-was .steps .step-four img {
+    margin: auto !important;
+    top: -20px;
+    left: 0 !important;
+    right: 0;
+    transform: none !important;
+  }
+
+  .how-it-was .steps .step-two img,
+  .how-it-was .steps .step-four img {
+    transform: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -15px !important;
+    bottom: auto !important;
+  }
+
+  .how-it-was .steps .step-two .step-right,
+  .how-it-was .steps .step-four .step-right {
+    margin: 0 !important;
   }
 
   .steps-title {
@@ -1118,7 +1261,7 @@ button {
   }
 
   .steps-section {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
   }
 
   .steps {
@@ -1128,10 +1271,25 @@ button {
     padding-bottom: 75px;
   }
 
-  .step-one,
-  .step-three {
+  .steps .step-one,
+  .steps .step-three {
     margin-left: 0px;
     display: flex;
+  }
+
+  .steps .step-two,
+  .steps .step-four {
+    display: flex;
+  }
+
+  .steps .step-two img,
+  .steps .step-four img {
+    transform: none !important;
+  }
+
+  .steps .step-two p,
+  .steps .step-four p {
+    text-align: start !important;
   }
 
   .icon-right,
@@ -1139,26 +1297,13 @@ button {
     height: fit-content;
   }
 
-  .step-two,
-  .step-four {
-    place-self: auto !important;
-    display: flex;
-    text-align: start !important;
-  }
-
-  .step-content-left {
-    margin-left: 0 !important;
-  }
-
+  .step-left,
   .step-right {
     margin: 10px !important;
   }
 
-  .step-left {
-    margin: 10px !important;
-  }
-
-  .steps-title-h1 {
+  .steps-title-h1,
+  .step-content-left {
     margin-left: 0px !important;
   }
 
@@ -1339,103 +1484,299 @@ button {
   }
 }
 
-@media (min-width: 1224px) and (max-width: 1320px) {
-  .how-it-was .how-it-was-article {
-    padding: 0px;
-    flex-direction: row-reverse;
-  }
-
-  .how-it-was .how-it-was-article .steps-title {
-    width: 50%;
-    padding: 50px 0px 50px 10px;
-    text-align: center;
-    font-size: 64px;
-    margin: auto;
-  }
-
-  .how-it-was .icon-right {
-    margin-right: 125px;
-  }
-
-  .how-it-was .right-line {
-    right: -20% !important;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1224px) {
-  .how-it-was .how-it-was-article {
-    flex-direction: row-reverse;
-    padding: 105px 0px 60px 0px;
-  }
-
-  .how-it-was .how-it-was-article .steps-title {
-    display: block;
-    text-align: center;
-    font-size: 64px;
-    margin: auto;
-    margin-bottom: 50px;
-  }
-
-  .how-it-was .how-it-was-article .steps {
-    margin-left: 0 !important;
-    margin-right: 215px;
-  }
-
-  .how-it-was .how-it-was-article .right-line,
-  .how-it-was .how-it-was-article .left-line {
-    display: none;
-  }
-
-  .how-it-was .how-it-was-article .float-left {
-    text-align: justify;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .background-how-it-was {
-    height: 270px;
-    background-position: 50% 30%;
-  }
-
-  .steps-title-h1 {
-    font-size: 64px;
-  }
-
+@media (min-width: 992px) and (max-width: 1420px) {
   .right-line,
   .left-line {
     display: none;
   }
 
-  .how-it-was .how-it-was-article {
-    flex-direction: column;
-    padding: 105px 0px 60px 0px;
-  }
-
-  .how-it-was .how-it-was-article .steps-title {
-    margin-left: 20px;
-  }
-
-  .how-it-was .how-it-was-article .step-content-left {
-    margin-left: 0;
-  }
-
-  .how-it-was .how-it-was-article .steps {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
-  }
-
-  .how-it-was .how-it-was-article .float-left {
-    text-align: justify;
+  .background-how-it-was {
+    display: none;
   }
 
   .how-it-was-child {
     top: -55px;
   }
 
+  .step-content-left {
+    align-self: center !important;
+  }
+
   .steps-title {
+    margin: auto;
+  }
+
+  .steps {
+    position: relative;
+  }
+
+  .steps .step-one {
+    margin-top: 20px;
+  }
+
+  .steps .step-one,
+  .steps .step-two,
+  .steps .step-three,
+  .steps .step-four {
+    margin-bottom: 0;
+    width: 75% !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: start;
+  }
+
+  .steps .step-one img,
+  .steps .step-two img,
+  .steps .step-three img,
+  .steps .step-four img {
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px black;
+    position: absolute;
+    background: #66cfcf;
+    left: 50px;
+    width: fit-content;
+    transform: translate(-125%, 0%);
+  }
+
+  .steps .step-one .float-left,
+  .steps .step-two .float-left,
+  .steps .step-three .float-left,
+  .steps .step-four .float-left {
+    margin: 0;
+  }
+
+  .steps .step-one .step-left,
+  .steps .step-two .step-left,
+  .steps .step-three .step-left,
+  .steps .step-four .step-left {
+    margin: 0 !important;
+  }
+
+  .steps .step-one p,
+  .steps .step-two p,
+  .steps .step-three p,
+  .steps .step-four p {
+    display: block !important;
+    width: auto !important;
+    right: 50%;
+    background: #ffffff;
+    padding: 35px 50px;
+    border-radius: 10px;
+    color: #66cfcf;
+  }
+
+  .steps .step-two,
+  .steps .step-four {
+    place-self: center !important;
+  }
+
+  .steps .step-two img,
+  .steps .step-four img {
+    bottom: 0;
+    top: 0;
+    margin: auto !important;
+    transform: translate(-115%, 0) !important;
+  }
+
+  .steps .step-two p,
+  .steps .step-four p {
+    text-align: start !important;
+  }
+
+  .steps .step-four {
+    margin-bottom: 20px;
+  }
+
+  .how-it-was .how-it-was-article .steps .step-two {
+    margin-bottom: 0 !important;
+  }
+
+  .how-it-was .how-it-was-article {
+    display: flex;
+    padding: 105px 0px 105px 0px;
+  }
+
+  .how-it-was .how-it-was-article .steps-title {
     display: block;
+    width: 100% !important;
+    text-align: center !important;
     margin-bottom: 50px;
+  }
+
+  .steps-title-h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .step-left {
+    margin-left: 15px;
+  }
+
+  .step-one,
+  .step-three {
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .how-it-was .how-it-was-article .steps {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .step-right,
+  .step-left {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .right-line,
+  .left-line {
+    display: none;
+  }
+
+  .background-how-it-was {
+    display: none;
+  }
+
+  .how-it-was-child {
+    top: -55px;
+  }
+
+  .step-content-left {
+    align-self: center !important;
+  }
+
+  .steps {
+    background: #ffffff;
+    position: relative;
+  }
+
+  .steps .step-one {
+    margin-top: 20px;
+  }
+
+  .steps .step-one,
+  .steps .step-two,
+  .steps .step-three,
+  .steps .step-four {
+    margin-bottom: 0;
+    width: 75% !important;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .steps .step-one img,
+  .steps .step-two img,
+  .steps .step-three img,
+  .steps .step-four img {
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px black;
+    position: absolute;
+    background: #66cfcf;
+    left: 50px;
+    width: fit-content;
+    transform: translate(-125%, 0%);
+  }
+
+  .steps .step-one .float-left,
+  .steps .step-two .float-left,
+  .steps .step-three .float-left,
+  .steps .step-four .float-left {
+    margin: 0;
+  }
+
+  .steps .step-one .step-left,
+  .steps .step-two .step-left,
+  .steps .step-three .step-left,
+  .steps .step-four .step-left {
+    margin: 0 !important;
+  }
+
+  .steps .step-one p,
+  .steps .step-two p,
+  .steps .step-three p,
+  .steps .step-four p {
+    display: block !important;
+    width: auto !important;
+    right: 50%;
+    background: #66cfcf;
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+
+  .steps .step-two,
+  .steps .step-four {
+    place-self: center !important;
+  }
+
+  .steps .step-two img,
+  .steps .step-four img {
+    bottom: 0;
+    top: 0;
+    margin: auto !important;
+    transform: translate(-115%, 0) !important;
+  }
+
+  .steps .step-two p,
+  .steps .step-four p {
+    text-align: start !important;
+  }
+
+  .steps .step-four {
+    margin-bottom: 20px;
+  }
+
+  .how-it-was .how-it-was-article .steps .step-two {
+    margin-bottom: 0 !important;
+  }
+
+  .how-it-was .how-it-was-article {
+    display: block;
+    padding: 105px 0px 0px 0px;
+  }
+
+  .how-it-was .how-it-was-article .steps-title {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
+
+  .steps-title-h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .step-left {
+    margin-left: 15px;
+  }
+
+  .step-one,
+  .step-three {
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .how-it-was .how-it-was-article .steps {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .step-right,
+  .step-left {
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   .doctor-image {
