@@ -653,7 +653,7 @@ button {
   color: #ffffff;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: calc(100% + 5%) calc(100% + 20%);
+  background-position: 105% 120%;
   background-size: 45%;
 }
 
@@ -1070,7 +1070,7 @@ button {
   }
 
   .preferences {
-    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-position: 125% 105%;
     background-size: 65%;
   }
 
@@ -1320,7 +1320,7 @@ button {
   }
 
   .preferences {
-    background-position: calc(100% + 25%) calc(100% + 5%);
+    background-position: 125% 105%;
     background-size: 65%;
   }
 
@@ -1458,7 +1458,7 @@ button {
   }
 
   .preferences {
-    background-position: calc(100% + 15%) calc(100% + 15%);
+    background-position: 115% 115%;
     background-size: 55%;
   }
 
